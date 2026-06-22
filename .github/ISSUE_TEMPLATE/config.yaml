@@ -1,0 +1,40 @@
+﻿name: 建筑提交
+description: 提交新的肉鸽建筑模块
+title: "[结构] "
+labels: ["structure"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: author
+    attributes:
+      label: 作者名称
+      description: 您是谁？
+      placeholder: ex. Dahesor
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: 作者联系方式
+      description: 如何联系您？
+      placeholder: ex. QQ...
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 备注
+      description: 任何你觉得有用的信息都可以写在这里
+      placeholder: 我们需要知道什么么？
+    validations:
+      required: false
+  - type: upload
+    id: files
+    attributes:
+      label: 上传文件
+      description: 上传所有的结构.nbt文件
+    validations:
+      required: true
