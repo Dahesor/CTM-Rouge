@@ -1,0 +1,1 @@
+data modify storage ram: struct_res.res set value "deadend:trial/room_1"

@@ -1,0 +1,6 @@
+use::mcdoc::level::cell::Cell
+
+struct Grid {
+    side_length?: int @ 1..,
+    cells?: [[Cell]]
+}

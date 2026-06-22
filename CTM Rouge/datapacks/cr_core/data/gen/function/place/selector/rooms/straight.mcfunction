@@ -1,0 +1,1 @@
+data modify storage ram: struct_res.res set value "straight:stronghold/portal_1"

@@ -1,0 +1,16 @@
+struct RoomPool {
+    pools?: [Rooms]
+}
+
+struct Rooms {
+    resource?: #[id="structure"] string,
+    id?: string,
+}
+
+enum(string) RoomPoolType {
+    FourWay = "FourWay",
+    ThreeWay = "ThreeWay",
+    Straight = "Straight",
+    Corner = "Corner",
+    DeadEnd = "DeadEnd",
+}

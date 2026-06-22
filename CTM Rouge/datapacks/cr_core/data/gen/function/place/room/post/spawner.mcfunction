@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=pre.game_clear,distance=..100] at @s run function gen:spawner/check

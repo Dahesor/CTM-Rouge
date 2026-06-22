@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "ticker":{
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "rcore:uid/new"
+    }
+}

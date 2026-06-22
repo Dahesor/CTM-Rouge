@@ -1,0 +1,47 @@
+use::java::util::text::Text
+use::mcdoc::level::cell::Cell
+use::mcdoc::level::cell::CellConnetion
+
+dispatch minecraft:storage["ram:"] to struct Ram{
+    stack?: [Ram],
+    text?: Text,
+    disjoint?: struct{
+        data?: [int],
+        input_1?: int,
+        input_2?: int,
+        edges?: [Edge],
+        forbidden_edges?: [Edge],
+        rooms?: [CellConnetion],
+        single_edge?: Edge,
+        x1?: int,
+        z1?: int,
+        x2?: int,
+        z2?: int,
+    },
+    list?: [any],
+    i?: struct{i?:any},
+    rm?: [CellConnetion],
+    map?: [Cell],
+    pos?: vec3,
+    struct_res?: struct{res?: #[id="structure"] string},
+    place?: StructurePlaceVars,
+    map_cell?: Cell,
+}
+
+struct StructurePlaceVars{
+    id?: #[id="structure"] string,
+    rotation?: ("none"|"180"|"clockwise_90"|"counterclockwise_90"),
+    mirror?: ("none"|"left_right"|"front_back"),
+    ...vec3,
+}
+
+struct vec3{
+    x?: int,
+    y?: int,
+    z?: int,
+}
+
+struct Edge{
+    from?: int,
+    to?: int,
+}

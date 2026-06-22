@@ -1,0 +1,1 @@
+execute in _dev:sandbox run tp @s 0 0 0

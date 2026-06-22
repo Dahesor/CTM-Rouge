@@ -1,0 +1,1 @@
+data modify storage ram: struct_res.res set value "village/decays/grass_9x9"

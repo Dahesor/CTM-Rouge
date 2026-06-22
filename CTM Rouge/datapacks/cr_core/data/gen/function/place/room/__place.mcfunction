@@ -1,0 +1,1 @@
+$place template $(id) ~$(x) ~$(y) ~$(z) $(rotation) $(mirror)

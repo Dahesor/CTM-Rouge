@@ -1,0 +1,1 @@
+$data modify storage map: construct.grid.cells[$(z)][$(x)].connections.$(dir) set value true

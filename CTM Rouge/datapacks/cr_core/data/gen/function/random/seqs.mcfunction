@@ -1,0 +1,1 @@
+execute summon marker run function gen:random/zmk

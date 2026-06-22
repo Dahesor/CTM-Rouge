@@ -1,0 +1,10 @@
+dispatch minecraft:storage["core:player"] to struct {
+    data?: [Player],
+    "_UID_GET"?: struct{
+        UID?: int,
+    },
+}
+
+struct Player{
+    UID?: int,
+}

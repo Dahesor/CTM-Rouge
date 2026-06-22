@@ -1,0 +1,6 @@
+use::mcdoc::level::rooms::RoomPool
+use::mcdoc::level::rooms::RoomPoolType
+
+dispatch minecraft:storage["reg:room"] to struct{
+    [RoomPoolType]?: RoomPool
+}

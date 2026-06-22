@@ -1,0 +1,4 @@
+copy.bat
+**/.vscode/**
+CTM Rouge/players/**
+level.dat_old

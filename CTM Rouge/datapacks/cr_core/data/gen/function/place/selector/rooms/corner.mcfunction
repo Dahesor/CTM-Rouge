@@ -1,0 +1,1 @@
+data modify storage ram: struct_res.res set value "corner:deepdark/turn_1"

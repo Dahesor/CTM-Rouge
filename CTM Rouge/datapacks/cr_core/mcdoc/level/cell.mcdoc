@@ -1,0 +1,76 @@
+use::core::team::Team
+
+/// A unit on the map
+struct Cell {
+    /// Type of this cell
+    type?: CellTypes,
+    /// If this cell is a special room, which type of special room is it
+    special?: SpecialTypes,
+    /// Where this cell is located
+    meta?: CellMeta,
+    /// Which directions are connected
+    connections?: CellConnetion,
+    /// Id of this room in the grid of the current floor
+    rid?: int,
+    /// Universal id of this room across all floors and all games
+    urid?: int,
+    normal_room?: struct{
+        /// Is finished by players
+        is_finished?: boolean,
+    }
+}
+
+struct CellConnetion{
+    pos_x?: boolean,
+    neg_x?: boolean,
+    pos_z?: boolean,
+    neg_z?: boolean,
+    floor_up?: boolean,
+    floor_down?: boolean,
+}
+
+enum(string) CellTypes{
+    /// Undicided
+    Void = "void",
+    /// Nothing
+    Empty = "empty",
+    /// Regular Room
+    Room = "room",
+    /// Large Room
+    LargeRoom = "large_room",
+    /// Connetions to the upper or lower floor
+    Stairs = "stairs",
+    /// Spawn
+    Spawn = "spawn",
+    /// Special Room
+    Special = "special",
+    /// Shop
+    Shop = "shop",
+    /// TP
+    Teleporter = "teleporter",
+}
+
+enum(string) SpecialTypes{
+}
+
+struct SpawnPoints{
+    ...CellMeta,
+    team?: Team,
+}
+
+struct Teleporters{
+    ...CellMeta,
+}
+
+struct Shops{
+    ...CellMeta,
+}
+
+struct CellMeta {
+    /// Which floor this cell is on
+    floorIdx?: int,
+    /// X Coord in the grid
+    x?: int,
+    /// Z Coord in the grid
+    z?: int
+}

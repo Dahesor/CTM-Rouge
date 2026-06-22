@@ -1,0 +1,18 @@
+use::mcdoc::level::grid::Grid
+use::mcdoc::level::cell::SpawnPoints
+use::mcdoc::level::cell::Teleporters
+use::mcdoc::level::cell::Shops
+
+struct Floor {
+    grid?: Grid,
+    spawn?: [SpawnPoints],
+    tp?: [Teleporters],
+    shop?: [Shops],
+}
+
+dispatch minecraft:storage["map:"] to struct{
+    ground?: Floor,
+    upper?: Floor,
+    top?: Floor,
+    construct?: Floor,
+}

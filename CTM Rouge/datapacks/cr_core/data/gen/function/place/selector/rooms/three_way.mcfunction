@@ -1,0 +1,1 @@
+data modify storage ram: struct_res.res set value "three_way:deep_dark/hallway_1"

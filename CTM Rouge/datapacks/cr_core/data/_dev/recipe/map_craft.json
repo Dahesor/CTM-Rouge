@@ -1,0 +1,6 @@
+{
+    "type": "crafting_special_mapextending",
+    "map": "filled_map",
+    "material": "paper",
+    "result": "filled_map"
+}
