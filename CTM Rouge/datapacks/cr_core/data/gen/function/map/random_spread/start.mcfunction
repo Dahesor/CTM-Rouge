@@ -13,6 +13,8 @@ scoreboard players operation #rand calculator.cr %= #possibility calculator.cr
 # Get the x and z coordinates of the selected location
 scoreboard players operation #x calculator.cr = #gen_x calculator.cr
 scoreboard players operation #z calculator.cr = #gen_z calculator.cr
+scoreboard players add #x calculator.cr 1
+scoreboard players add #z calculator.cr 1
 scoreboard players operation #temp calculator.cr = #rand calculator.cr
 scoreboard players operation #temp calculator.cr /= #allowed_length calculator.cr
 scoreboard players operation #z calculator.cr += #temp calculator.cr
