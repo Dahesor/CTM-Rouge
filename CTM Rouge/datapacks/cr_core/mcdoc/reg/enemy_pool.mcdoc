@@ -1,0 +1,45 @@
+dispatch minecraft:storage["reg:enemy_pool"] to struct {
+    reg?: [EnemyPool],
+    this?: EnemyPool,
+    zrun?: EnemyPool,
+    "_"?: struct{
+        id?: string,
+    }
+}
+
+struct EnemyPool{
+    /// ID of this pool
+    id?: string,
+    /// Mobs ID that can spawn from this pool
+    contents?: [string],
+    /// Tags that can be used to filter this pool
+    tags?: [SpawnerMobSeries],
+    /// Weight of this pool
+    weight?: int,
+    /// Average Difficulty of this pool
+    average_difficulty?: int,
+    /// Difficulty rating of this pool
+    rating?: int @..10,
+}
+
+
+type SpawnerMobSeries = (
+    "undead"|
+    "zombie"|
+    "skeleton"|
+    "overworld"|
+    "overworld_night"|
+    "overworld_day"|
+    "overworld_cave"|
+    "illager"|
+    "nether"|
+    "nether_fortress"|
+    "nether_bastion"|
+    "end"|
+    "end_city"|
+    "ocean"|
+    "deep_dark"|
+    "swamp"|
+    "trial_chamber"|
+    "magic"
+)

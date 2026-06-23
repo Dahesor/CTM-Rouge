@@ -7,3 +7,9 @@ execute store result storage run: i.x int 1 run scoreboard players get #x calcul
 execute store result storage run: i.z int 1 run scoreboard players get #new_idx calculator.cr
 data modify storage run: i.dir set value "pos_z"
 function gen:map/__/open_edge/__open with storage run: i
+
+scoreboard players operation $this calculator.cr = #z calculator.cr
+scoreboard players operation $this calculator.cr *= floor.side_length options
+execute store result storage ram: disjoint.input_1 int 1 run scoreboard players operation $this calculator.cr += #x calculator.cr
+execute store result storage ram: disjoint.input_2 int 1 run scoreboard players operation $this calculator.cr -= floor.side_length options
+function gen:disjoint/union

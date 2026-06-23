@@ -40,6 +40,7 @@ scoreboard players set #2 calculator.cr 2
 scoreboard players set #3 calculator.cr 3
 scoreboard players set #4 calculator.cr 4
 scoreboard players set #5 calculator.cr 5
+scoreboard players set #100 calculator.cr 100
 
 
 data modify storage ram: i set value {i:0}

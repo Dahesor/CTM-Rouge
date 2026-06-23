@@ -2,6 +2,7 @@ data modify storage ram: place set value {rotation:"none",mirror:"none",id:"foss
 
 data modify storage ram: place.id set from storage ram: struct_res.res
 
+execute if score #edge calculator.cr matches 4 run function gen:place/room/transform/4_way
 execute if score #edge calculator.cr matches 3 run function gen:place/room/transform/3_way
 execute if score #edge calculator.cr matches 2 run function gen:place/room/transform/2_way
 execute if score #edge calculator.cr matches 1 run function gen:place/room/transform/1_way

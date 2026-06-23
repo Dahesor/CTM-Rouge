@@ -6,6 +6,7 @@ data modify storage ram: map_cell set from storage ram: map[0]
 execute if data storage ram: map_cell{type:"room"} run function gen:place/selector/master
 execute if data storage ram: map_cell{type:"spawn"} run function gen:place/selector/spawn
 execute if data storage ram: map_cell{type:"teleporter"} run function gen:place/selector/tp
+execute if data storage ram: map_cell{type:"shop"} run function gen:place/selector/shop
 function gen:place/room
 
 data remove storage ram: rm[0]

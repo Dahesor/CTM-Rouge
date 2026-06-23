@@ -2,6 +2,8 @@ execute store result score #rand calculator.cr run random value 0..100 gen:edges
 
 execute if score #rand calculator.cr > cell.connectivity options run return run function gen:disjoint/open/skip
 
+data modify storage ram: disjoint.single_edge set from storage ram: disjoint.edges[0]
+execute if function gen:disjoint/forbidden run return run function gen:disjoint/open/skip
 
 execute store result score #g1 calculator.cr run data get storage ram: disjoint.edges[0].from
 execute store result score #g2 calculator.cr run data get storage ram: disjoint.edges[0].to

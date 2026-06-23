@@ -1,0 +1,1 @@
+$data modify storage reg:mob this set from storage reg:mob reg[{id:"$(id)"}]

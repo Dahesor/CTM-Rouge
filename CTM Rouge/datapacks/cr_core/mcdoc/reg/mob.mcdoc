@@ -1,0 +1,12 @@
+dispatch minecraft:storage["reg:mob"] to struct {
+    reg?: [SpawnerMob],
+    this?: SpawnerMob,
+    zrun?: SpawnerMob,
+}
+
+struct SpawnerMob{
+    id?: string,
+    type?: #[id="entity_type"] string,
+    data?: minecraft:entity[[type]],
+    difficulty?: int,
+}

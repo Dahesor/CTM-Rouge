@@ -1,0 +1,1 @@
+$data modify storage reg:enemy_pool _.id set from storage reg:enemy_pool this.contents[$(i)]

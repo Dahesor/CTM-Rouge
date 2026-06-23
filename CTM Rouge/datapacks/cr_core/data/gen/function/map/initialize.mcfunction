@@ -1,3 +1,6 @@
+# Here we generate the map for this game
+# Note that the structures are not yet placed in here
+
 data modify storage map: construct set value {grid:{cells:[],side_length:1},shop:[],spawn:[],tp:[]}
 
 scoreboard players set #count_floor calculator.cr 1
@@ -7,7 +10,6 @@ execute store result storage map: construct.grid.side_length int 1 run scoreboar
 scoreboard players set #count_z calculator.cr 0
 scoreboard players set #count calculator.cr 0
 function gen:map/__/make_z
-
 
 # Place Spawn Points
 scoreboard players operation #spawn_count calculator.cr = game.spawn_count options
@@ -19,3 +21,6 @@ function gen:map/spawn_point/new
 
 # Place Teleporters
 function gen:map/tp/master
+
+# Place Shops
+function gen:map/shop/master
