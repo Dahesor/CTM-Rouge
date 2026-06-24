@@ -1,0 +1,21 @@
+use::java::world::item::SingleItem
+
+dispatch minecraft:storage["reg:item"] to struct{
+    reg?: [RegistryItem],
+    new?: UnRegisteredItem,
+    this?: RegistryItem,
+    solo_entry?: RegistryItem,
+}
+
+struct UnRegisteredItem{
+    id?: string,
+    stack?: SingleItem,
+    base_price?: int,
+    lore_line_count?: int,
+}
+
+struct RegistryItem {
+    id?: string,
+    stack?: SingleItem,
+    base_price?: int,
+}

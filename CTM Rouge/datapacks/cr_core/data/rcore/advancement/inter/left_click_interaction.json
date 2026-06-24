@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "rcinter":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "entity_type": "interaction",
+                    "entity_tags": {
+                        "all_of": ["cr.shop_interact"]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rcore:shop/trigger/left_click"
+    }
+}

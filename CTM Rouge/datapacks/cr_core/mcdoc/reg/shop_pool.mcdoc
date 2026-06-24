@@ -1,0 +1,19 @@
+use::reg::item::RegistryItem
+
+dispatch minecraft:storage["reg:shop_pool"] to struct{
+    reg?: [ShopPool],
+}
+
+struct ShopPool{
+    regular?: [Pool],
+    elite?: [Pool],
+    id?: string,
+}
+
+struct Pool{
+    list?: [RegistryItem],
+}
+
+dispatch mcdoc:custom_data["ShopInteract"] to struct{
+    contains?: RegistryItem,
+}

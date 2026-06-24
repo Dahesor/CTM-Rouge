@@ -1,0 +1,1 @@
+function reg:item/weapon/sword/wooden_sword

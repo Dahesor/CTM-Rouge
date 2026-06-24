@@ -1,0 +1,1 @@
+$data modify storage run: idgen.result set value "item.$(id).$(count)"

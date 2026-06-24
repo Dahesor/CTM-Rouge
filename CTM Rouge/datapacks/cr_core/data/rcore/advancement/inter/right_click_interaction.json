@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "rcinter":{
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "entity_type": "interaction",
+                    "entity_tags": {
+                        "all_of": ["cr.shop_interact"]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rcore:shop/trigger/left_click"
+    }
+}

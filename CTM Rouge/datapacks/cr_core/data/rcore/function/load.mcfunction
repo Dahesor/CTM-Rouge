@@ -4,6 +4,9 @@ scoreboard objectives add data dummy
 scoreboard objectives add UID dummy
 scoreboard objectives add death deathCount
 scoreboard objectives add leave_game custom:leave_game
+scoreboard objectives add shop_session dummy
+scoreboard objectives add interaction dummy
+scoreboard objectives add dialog trigger
 
 
 team add red
@@ -45,3 +48,11 @@ scoreboard players set #100 calculator.cr 100
 
 data modify storage ram: i set value {i:0}
 data modify storage core:player _UID_GET set value {UID:-1}
+
+
+
+
+return 1
+data modify storage dlm: ticket set value {dimension:"overworld",pos:[0,0],id:"rcore:ROOT",life:{type:"indefinite"},on_load:["say Loaded Root Ticket"]}
+function dlm:new_ticket
+tag @s add cr.shop_interact
