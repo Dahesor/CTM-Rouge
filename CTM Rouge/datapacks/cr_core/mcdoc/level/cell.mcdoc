@@ -17,6 +17,9 @@ struct Cell {
     normal_room?: struct{
         /// Is finished by players
         is_finished?: boolean,
+    },
+    spawn_room?: struct{
+        owner?: Team,
     }
 }
 
@@ -56,14 +59,17 @@ enum(string) SpecialTypes{
 struct SpawnPoints{
     ...CellMeta,
     team?: Team,
+    urid?: int,
 }
 
 struct Teleporters{
     ...CellMeta,
+    urid?: int,
 }
 
 struct Shops{
     ...CellMeta,
+    urid?: int,
 }
 
 struct CellMeta {

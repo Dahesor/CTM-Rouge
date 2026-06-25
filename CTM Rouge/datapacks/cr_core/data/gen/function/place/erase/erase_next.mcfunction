@@ -1,4 +1,4 @@
-execute if score #rid calculator.cr > floor.room_count options run return 1
+execute if score #rid calculator.cr > floor.room_count options run return run function rcore:stream/initialize/cleanup
 
 function gen:place/erase/fill_this
 

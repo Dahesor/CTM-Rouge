@@ -15,6 +15,12 @@ $data modify storage map: construct.grid.cells[$(z)][$(x)] merge from storage ra
 # Mark edges as forbidden
 $data modify storage ram: map_cell set from storage map: construct.grid.cells[$(z)][$(x)]
 
+data modify storage map: construct.shop append value {floorIdx:0,x:0,z:0,urid:-1}
+execute store result storage map: construct.shop[-1].floorIdx int 1 run scoreboard players get #count_floor calculator.cr
+$data modify storage map: construct.shop[-1].x set value $(x)
+$data modify storage map: construct.shop[-1].z set value $(z)
+$data modify storage map: construct.shop[-1].urid set from storage map: construct.grid.cells[$(z)][$(x)].urid
+
 execute if data storage ram: map_cell.connections{pos_z:false} run function gen:map/shop/forbidden/pos_z
 execute if data storage ram: map_cell.connections{neg_z:false} run function gen:map/shop/forbidden/neg_z
 execute if data storage ram: map_cell.connections{pos_x:false} run function gen:map/shop/forbidden/pos_x

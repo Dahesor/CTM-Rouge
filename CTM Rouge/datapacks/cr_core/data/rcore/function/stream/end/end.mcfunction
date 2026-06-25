@@ -1,0 +1,1 @@
+scoreboard players set game data 0

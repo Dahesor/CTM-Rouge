@@ -1,19 +1,14 @@
 use::reg::item::RegistryItem
+use::reg::item::ItemRarity
 
 dispatch minecraft:storage["reg:shop_pool"] to struct{
     reg?: [ShopPool],
 }
 
 struct ShopPool{
-    regular?: [Pool],
-    elite?: [Pool],
-    id?: string,
+    [ItemRarity]?: [ShopPoolEntry],
 }
 
-struct Pool{
-    list?: [RegistryItem],
-}
-
-dispatch mcdoc:custom_data["ShopInteract"] to struct{
-    contains?: RegistryItem,
+struct ShopPoolEntry{
+    item: RegistryItem,
 }

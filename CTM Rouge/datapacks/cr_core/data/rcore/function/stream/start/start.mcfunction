@@ -1,0 +1,16 @@
+data modify storage team: data set value []
+execute if score game.team_count options matches 1.. run data modify storage team: data append value {team:"red",team_id:1}
+execute if score game.team_count options matches 2.. run data modify storage team: data append value {team:"blue",team_id:2}
+execute if score game.team_count options matches 3.. run data modify storage team: data append value {team:"yellow",team_id:3}
+execute if score game.team_count options matches 4.. run data modify storage team: data append value {team:"green",team_id:4}
+
+scoreboard players set #count calculator.cr 0
+function rcore:stream/start/spawn_point/pick_spawn
+
+
+scoreboard players reset * death
+scoreboard players reset * revive_cd
+scoreboard players set game data 1
+execute as @a[scores={join_game=1..}] run function rcore:math/mapping/team--score
+
+function rcore:stream/start/spawn_point/spawn_players

@@ -1,0 +1,1 @@
+scoreboard players set REVIVE_COOLDOWN options 600

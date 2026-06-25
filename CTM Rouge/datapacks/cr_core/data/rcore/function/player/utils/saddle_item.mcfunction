@@ -1,0 +1,1 @@
+item replace entity @s saddle with structure_void[equippable={slot:"saddle",swappable:false,equip_sound:"intentionally_empty",allowed_entities:["player"],dispensable:false,equip_on_interact:false,damage_on_hurt:false},enchantments={"rcore:player_saddle":1}]

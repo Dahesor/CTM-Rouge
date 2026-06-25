@@ -16,7 +16,6 @@ scoreboard players set floor.side_length options 8
 scoreboard players set floor.base.x options 0
 scoreboard players set floor.base.y options 20
 scoreboard players set floor.base.z options 0
-scoreboard players set game.spawn_count options 3
 scoreboard players set $difficulty options 200
 scoreboard players set mob.identity_min_time options 200
 scoreboard players set mob.identity_max_time options 600

@@ -3,7 +3,7 @@
         "gameVersion": "26.2",
         "dependencies": [
             "file:///C:/Users/dahes/OneDrive/Desktop/Projects/Leopard%20Cat%20Forceload%20Lib/Leopard_Cat_Dependency",
-            "file:///C:/Users/dahes/OneDrive/Desktop/Projects/neg_z-Better-Schedule/DBS-Dependency.zip",
+            "file:///C:/Users/dahes/OneDrive/Desktop/Projects/D-Better-Schedule/DBS-Dependency",
             "@vanilla-datapack",
 			"@vanilla-resourcepack",
 			"@vanilla-mcdoc"

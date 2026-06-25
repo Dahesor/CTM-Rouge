@@ -1,0 +1,28 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "rcore:item/emerald"
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_count",
+            "add": false,
+            "count": {
+                "type": "score",
+                "score": "calculator.cr",
+                "target": {
+                    "type": "fixed",
+                    "name": "#count"
+                }
+            }
+        }
+    ]
+}

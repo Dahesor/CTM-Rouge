@@ -7,7 +7,11 @@ scoreboard objectives add leave_game custom:leave_game
 scoreboard objectives add shop_session dummy
 scoreboard objectives add interaction dummy
 scoreboard objectives add dialog trigger
-
+scoreboard objectives add room dummy
+scoreboard objectives add team dummy
+scoreboard objectives add revive_cd dummy
+scoreboard objectives add join_game dummy
+scoreboard objectives add emerald dummy
 
 team add red
 team add blue
@@ -43,6 +47,7 @@ scoreboard players set #2 calculator.cr 2
 scoreboard players set #3 calculator.cr 3
 scoreboard players set #4 calculator.cr 4
 scoreboard players set #5 calculator.cr 5
+scoreboard players set #50 calculator.cr 50
 scoreboard players set #100 calculator.cr 100
 
 

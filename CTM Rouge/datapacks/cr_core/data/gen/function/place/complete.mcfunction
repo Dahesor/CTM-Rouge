@@ -1,1 +1,1 @@
-return 1
+execute if score $callback calculator.cr matches 1 run schedule function rcore:stream/initialize/floor_1 1s

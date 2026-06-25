@@ -1,0 +1,1 @@
+$data modify storage map: ground.grid.cells[$(z)][$(x)].spawn_room.owner set from storage team: data[0].team

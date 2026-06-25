@@ -1,1 +1,19 @@
+use::mcdoc::level::cell::SpawnPoints
 type Team = ("red"|"blue"|"yellow"|"green")
+
+dispatch minecraft:storage["team:"] to struct{
+    data?: [TeamStorage]
+}
+
+struct TeamStorage {
+    team?: Team,
+    spawn?: SpawnPoints,
+    team_id?: TeamID,
+}
+
+enum(int) TeamID{
+    red = 1,
+    blue = 2,
+    yellow = 3,
+    green = 4
+}

@@ -8,14 +8,35 @@ dispatch minecraft:storage["reg:item"] to struct{
 }
 
 struct UnRegisteredItem{
-    id?: string,
-    stack?: SingleItem,
-    base_price?: int,
+    ...RegistryItem,
+    /// Number of lines of lore this Item has
     lore_line_count?: int,
 }
 
 struct RegistryItem {
+    /// Unique identifier of this Item
     id?: string,
+    /// The Item Stack
     stack?: SingleItem,
+    /// Base price of this Item in shop
     base_price?: int,
+    /// Rarity of this Item, determines color and rate of drop
+    rarity?: ItemRarity,
+    /// If this Item is available in shop
+    in_shop?: boolean,
+}
+
+enum(string) ItemRarity{
+    /// 初始（白色）
+    initial = "initial",
+    /// 普通（绿色）
+    common = "common",
+    /// 稀有（蓝色）
+    rare = "rare",
+    /// 史诗（紫色）
+    epic = "epic",
+    /// 传说（橙色）
+    legendary = "legendary",
+    /// 神话（红色）
+    mythic = "mythic",
 }
