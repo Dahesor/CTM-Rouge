@@ -26,7 +26,7 @@ execute store result score $mob_difficulty calculator.cr run data get storage re
 execute if score $this_difficulty calculator.cr > $mob_difficulty calculator.cr run function gen:place/room/post/spawner/make_harder
 
 function gen:place/room/post/spawner/setup
-
+execute store result score @s room run data get storage ram: map_cell.urid
 
 tag @s remove __spawner.unintialized
 execute if score #final_count calculator.cr matches 1.. as @e[type=marker,tag=__spawner.unintialized,limit=1,sort=random] at @s run function gen:place/room/post/spawner/each

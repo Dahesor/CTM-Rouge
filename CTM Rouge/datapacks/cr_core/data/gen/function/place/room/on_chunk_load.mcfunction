@@ -27,5 +27,5 @@ execute if data storage run: rm{pos_z:true} run function gen:place/room/path/up
 execute if data storage run: rm{pos_x:true} run function gen:place/room/path/left
 
 
-
+scoreboard players add #rid calculator.cr 1
 schedule function gen:place/next 1t

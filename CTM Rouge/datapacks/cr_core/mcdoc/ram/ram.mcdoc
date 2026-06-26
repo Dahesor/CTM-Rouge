@@ -5,19 +5,7 @@ use::mcdoc::level::cell::CellConnetion
 dispatch minecraft:storage["ram:"] to struct Ram{
     stack?: [Ram],
     text?: Text,
-    disjoint?: struct{
-        data?: [int],
-        input_1?: int,
-        input_2?: int,
-        edges?: [Edge],
-        forbidden_edges?: [Edge],
-        rooms?: [CellConnetion],
-        single_edge?: Edge,
-        x1?: int,
-        z1?: int,
-        x2?: int,
-        z2?: int,
-    },
+    disjoint?: DisJoint,
     list?: [any],
     i?: struct{i?:any},
     rm?: [CellConnetion],
@@ -26,6 +14,21 @@ dispatch minecraft:storage["ram:"] to struct Ram{
     struct_res?: struct{res?: #[id="structure"] string},
     place?: StructurePlaceVars,
     map_cell?: Cell,
+    broadcast?: struct{self?: Text, teammate?: Text, enemy?: Text, spectator?: Text},
+}
+
+struct DisJoint{
+    data?: [int],
+    input_1?: int,
+    input_2?: int,
+    edges?: [Edge],
+    forbidden_edges?: [Edge],
+    rooms?: [CellConnetion],
+    single_edge?: Edge,
+    x1?: int,
+    z1?: int,
+    x2?: int,
+    z2?: int,
 }
 
 struct StructurePlaceVars{

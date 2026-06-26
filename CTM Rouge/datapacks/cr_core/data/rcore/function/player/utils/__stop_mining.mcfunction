@@ -1,0 +1,1 @@
+attribute @s block_interaction_range modifier remove rcore:no_mining

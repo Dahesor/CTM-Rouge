@@ -1,6 +1,6 @@
 # Here we generate the map for this game
 # Note that the structures are not yet placed in here
-
+scoreboard players set #unique_room_id calculator.cr -1
 data modify storage map: construct set value {grid:{cells:[],side_length:1},shop:[],spawn:[],tp:[]}
 
 scoreboard players set #count_floor calculator.cr 1

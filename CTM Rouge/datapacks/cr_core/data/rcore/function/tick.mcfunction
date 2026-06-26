@@ -5,6 +5,7 @@ execute if score #loop_20 calculator.cr matches 0 run function rcore:second
 
 # ========== pre =============
 
-execute as @a run function rcore:player/ticker
+scoreboard players add time data 1
+execute as @a at @s run function rcore:player/ticker
 
 # ========== aft =============

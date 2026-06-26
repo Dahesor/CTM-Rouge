@@ -12,6 +12,9 @@ scoreboard objectives add team dummy
 scoreboard objectives add revive_cd dummy
 scoreboard objectives add join_game dummy
 scoreboard objectives add emerald dummy
+scoreboard objectives add monitor.spawner_mined mined:spawner
+scoreboard objectives add pos_x dummy
+scoreboard objectives add pos_z dummy
 
 team add red
 team add blue

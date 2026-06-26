@@ -11,4 +11,3 @@ function gen:place/room
 
 data remove storage ram: rm[0]
 data remove storage ram: map[0]
-scoreboard players add #rid calculator.cr 1

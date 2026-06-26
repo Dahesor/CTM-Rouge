@@ -26,3 +26,5 @@ scoreboard players operation floor.room_count options = floor.side_length option
 scoreboard players operation floor.room_count options *= floor.side_length options
 scoreboard players operation SPAWNER_DIFF_AMPLITUDE options = SPAWNER_DIFF_VARIANCE options
 scoreboard players operation SPAWNER_DIFF_AMPLITUDE options /= #2 calculator.cr
+scoreboard players operation map_spacing options = ROOM_SIZE options
+scoreboard players operation map_spacing options += TUNNEL_SPACE options
