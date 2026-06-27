@@ -1,6 +1,8 @@
 use::java::util::text::Text
 use::mcdoc::level::cell::Cell
 use::mcdoc::level::cell::CellConnetion
+use::ram::player_map::PlayerMap
+use::ram::dialogmix::DialogMix
 
 dispatch minecraft:storage["ram:"] to struct Ram{
     stack?: [Ram],
@@ -15,6 +17,10 @@ dispatch minecraft:storage["ram:"] to struct Ram{
     place?: StructurePlaceVars,
     map_cell?: Cell,
     broadcast?: struct{self?: Text, teammate?: Text, enemy?: Text, spectator?: Text},
+    emptyPlMap?: PlayerMap,
+    dialog?: struct{
+        dialog?: DialogMix,
+    }
 }
 
 struct DisJoint{

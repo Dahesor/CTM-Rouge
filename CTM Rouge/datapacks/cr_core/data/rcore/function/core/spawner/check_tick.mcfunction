@@ -4,8 +4,6 @@ execute if block ~ ~ ~ spawner run return fail
 
 playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1.3
 
-say hi
-
 #Room Cleared Check
 scoreboard players operation $this room = @s room
 kill @s

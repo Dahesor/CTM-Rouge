@@ -1,0 +1,119 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "crouge:spaces"
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/room.png",
+            "chars": [
+                "r"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/void.png",
+            "chars": [
+                "n"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/shop.png",
+            "chars": [
+                "s"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/tp.png",
+            "chars": [
+                "t"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/red_spawn.png",
+            "chars": [
+                "R"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/blue_spawn.png",
+            "chars": [
+                "B"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/yellow_spawn.png",
+            "chars": [
+                "Y"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/green_spawn.png",
+            "chars": [
+                "G"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/home.png",
+            "chars": [
+                "H"
+            ]
+        },
+
+
+
+        {
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 8,
+            "file":"crouge:font/map/path_horizontal.png",
+            "chars": [
+                "h"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 7,
+            "height": 8,
+            "file":"crouge:font/map/path_verticle.png",
+            "chars": [
+                "v"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 8,
+            "height": 8,
+            "file":"crouge:font/map/path_void.png",
+            "chars": [
+                "N"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+use::java::util::text::Text
+use::mcdoc::level::grid::Grid
+
+struct PlayerMap{
+    ground?: PlayerMapLevel,
+    upper?: PlayerMapLevel,
+    top?: PlayerMapLevel,
+}
+
+struct PlayerMapLevel{
+    grid?: Grid,
+    compiled?: [[Text]],
+}

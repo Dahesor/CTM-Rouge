@@ -1,0 +1,44 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "crouge:spaces"
+        },
+        {
+            "type": "bitmap",
+            "ascent": 18,
+            "height": 18,
+            "file":"crouge:font/player/pos_x.png",
+            "chars": [
+                "1"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 18,
+            "height": 18,
+            "file":"crouge:font/player/neg_x.png",
+            "chars": [
+                "2"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 18,
+            "height": 18,
+            "file":"crouge:font/player/pos_z.png",
+            "chars": [
+                "3"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 18,
+            "height": 18,
+            "file":"crouge:font/player/neg_z.png",
+            "chars": [
+                "4"
+            ]
+        }
+    ]
+}

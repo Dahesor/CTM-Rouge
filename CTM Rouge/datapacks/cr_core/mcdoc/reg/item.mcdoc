@@ -24,6 +24,8 @@ struct RegistryItem {
     rarity?: ItemRarity,
     /// If this Item is available in shop
     in_shop?: boolean,
+    /// If this Item could be dropped by spawners
+    spawner_loot?: boolean,
 }
 
 enum(string) ItemRarity{

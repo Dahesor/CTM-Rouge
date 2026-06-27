@@ -15,6 +15,10 @@ scoreboard objectives add emerald dummy
 scoreboard objectives add monitor.spawner_mined mined:spawner
 scoreboard objectives add pos_x dummy
 scoreboard objectives add pos_z dummy
+scoreboard objectives add map_z dummy
+scoreboard objectives add map_font dummy
+scoreboard objectives add map_x dummy
+scoreboard objectives add floor dummy
 
 team add red
 team add blue
@@ -50,6 +54,13 @@ scoreboard players set #2 calculator.cr 2
 scoreboard players set #3 calculator.cr 3
 scoreboard players set #4 calculator.cr 4
 scoreboard players set #5 calculator.cr 5
+scoreboard players set #6 calculator.cr 6
+scoreboard players set #7 calculator.cr 7
+scoreboard players set #8 calculator.cr 8
+scoreboard players set #10 calculator.cr 10
+scoreboard players set #12 calculator.cr 12
+scoreboard players set #16 calculator.cr 16
+scoreboard players set #18 calculator.cr 18
 scoreboard players set #50 calculator.cr 50
 scoreboard players set #100 calculator.cr 100
 

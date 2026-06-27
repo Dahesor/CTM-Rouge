@@ -19,3 +19,11 @@ execute if score @s room = $this room run return 1
 scoreboard players operation @s room = $this room
 #> Check if player got back to spawn
 execute if function rcore:player/utils/condition/at_spawn run function rcore:core/score/gain/from_items
+
+#> Check for new room discovery
+function rcore:math/team_list/self_score_rotate
+data modify storage run: i set value {x:0,z:0}
+execute store result storage run: i.x int 1 run scoreboard players get $this pos_x
+execute store result storage run: i.z int 1 run scoreboard players get $this pos_z
+function rcore:team/map/read/__self_map_cell with storage run: i
+execute if data storage team: cell{type:"void"} run function rcore:team/map/update_from_member
