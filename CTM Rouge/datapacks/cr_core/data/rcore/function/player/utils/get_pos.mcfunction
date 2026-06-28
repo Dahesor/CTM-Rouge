@@ -9,6 +9,10 @@ scoreboard players operation $this pos_x -= floor_1.x data
 scoreboard players operation $this pos_z -= floor_1.z data
 scoreboard players operation $this pos_x /= map_spacing options
 scoreboard players operation $this pos_z /= map_spacing options
+execute if score $this pos_x matches ..-1 run scoreboard players set $this pos_x 0
+execute if score $this pos_z matches ..-1 run scoreboard players set $this pos_z 0
+scoreboard players operation #save pos_x = $this pos_x
+scoreboard players operation #save pos_z = $this pos_z
 
 scoreboard players operation $this room = $this pos_z
 scoreboard players operation $this room *= floor.side_length options
@@ -26,7 +30,7 @@ execute if function rcore:player/utils/condition/at_spawn run function rcore:cor
 #> Check for new room discovery
 function rcore:math/team_list/self_score_rotate
 data modify storage run: i set value {x:0,z:0}
-execute store result storage run: i.x int 1 run scoreboard players get $this pos_x
-execute store result storage run: i.z int 1 run scoreboard players get $this pos_z
+execute store result storage run: i.x int 1 run scoreboard players get #save pos_x
+execute store result storage run: i.z int 1 run scoreboard players get #save pos_z
 function rcore:team/map/read/__self_map_cell with storage run: i
 execute if data storage team: cell{type:"void"} run function rcore:team/map/update_from_member

@@ -14,7 +14,7 @@
                 },
                 "player": {
                     "entity_tags": {
-                        "none_of": ["map.display"]
+                        "none_of": ["map.display","map.tp"]
                     }
                 }
             }

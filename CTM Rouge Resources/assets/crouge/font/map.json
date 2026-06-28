@@ -85,6 +85,15 @@
                 "H"
             ]
         },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/alpha_0.png",
+            "chars": [
+                "a"
+            ]
+        },
 
 
 

@@ -1,0 +1,2 @@
+$data modify storage ram: tpPlMap.ground.compiled[-1][-1].extra[0] append value {text:"a",click_event:{action:"run_command",command:"/trigger input set $(i)"}}
+data modify storage ram: tpPlMap.ground.compiled[-1][-1].extra[0] append value "]"

@@ -1,0 +1,1 @@
+execute if score @s pos_z matches 1.. run function rcore:core/capture/action/reduce_capture

@@ -23,5 +23,7 @@
     "item.stone_sword.1":"石头做的，比起砍人更像砸人",
     "item.stone_sword.2":"还是多带点勇气使用它吧",
     "item.stone_pickaxe":"石镐",
-    "item.stone_pickaxe.1":"起码很沉"
+    "item.stone_pickaxe.1":"起码很沉",
+    "gui.tp":"传送",
+    "gui.tp.tip":"传送至出生点或已占领的传送站\n必须在出生点或已占领的传送站内才能使用"
 }

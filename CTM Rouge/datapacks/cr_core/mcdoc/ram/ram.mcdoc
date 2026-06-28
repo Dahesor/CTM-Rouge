@@ -8,6 +8,7 @@ use::ram::dialogmix::DialogMix
 dispatch minecraft:storage["ram:"] to struct Ram{
     stack?: [Ram],
     text?: Text,
+    text2?: Text,
     disjoint?: DisJoint,
     list?: [any],
     i?: struct{i?:any},
@@ -19,6 +20,7 @@ dispatch minecraft:storage["ram:"] to struct Ram{
     map_cell?: Cell,
     broadcast?: struct{self?: Text, teammate?: Text, enemy?: Text, spectator?: Text},
     emptyPlMap?: PlayerMap,
+    tpPlMap?: PlayerMap,
     thisPlMap?: PlayerMapLevel,
     dialog?: struct{
         dialog?: DialogMix,

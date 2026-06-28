@@ -1,0 +1,5 @@
+summon firework_rocket ~ ~ ~ {LifeTime:5,FireworksItem:{id:"firework_rocket",components:{fireworks:{flight_duration:5,explosions:[{shape:"small_ball",colors:[460787,3669760,14614528]}]}}}}
+summon firework_rocket ~3 ~ ~ {LifeTime:10,FireworksItem:{id:"firework_rocket",components:{fireworks:{flight_duration:5,explosions:[{shape:"large_ball",colors:[460787,3669760,14614528]}]}}}}
+summon firework_rocket ~ ~ ~-3 {LifeTime:15,FireworksItem:{id:"firework_rocket",components:{fireworks:{flight_duration:5,explosions:[{shape:"creeper",colors:[460787,3669760,14614528]}]}}}}
+summon firework_rocket ~ ~ ~3 {LifeTime:20,FireworksItem:{id:"firework_rocket",components:{fireworks:{flight_duration:5,explosions:[{shape:"burst",colors:[460787,3669760,14614528]}]}}}}
+summon firework_rocket ~-3 ~ ~3 {LifeTime:25,FireworksItem:{id:"firework_rocket",components:{fireworks:{flight_duration:5,explosions:[{shape:"star",colors:[460787,3669760,14614528]}]}}}}

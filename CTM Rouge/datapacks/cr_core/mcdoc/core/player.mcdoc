@@ -8,4 +8,5 @@ dispatch minecraft:storage["core:player"] to struct {
 struct Player{
     UID?: int,
     Name?: string,
+    tp_target?: int,
 }

@@ -1,0 +1,13 @@
+{
+    "tp.captured": {
+        "replace": true,
+        "sounds": [
+            {
+                "name": "crouge:soundshelfstudio-ui-chime-success-sound",
+                "stream": false,
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    }
+}

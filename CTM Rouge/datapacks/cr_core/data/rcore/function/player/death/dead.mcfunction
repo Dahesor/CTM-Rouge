@@ -1,4 +1,8 @@
 scoreboard players reset @s death
+scoreboard players reset @s tp.cd
+scoreboard players reset @s tp.target
+tag @s remove map.tp
+dialog clear @s
 scoreboard players operation @s revive_cd = REVIVE_COOLDOWN options
 gamemode spectator @s
 

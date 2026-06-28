@@ -1,1 +1,8 @@
 scoreboard players enable @s dialog
+
+# Game
+execute unless score game data matches 1.. run return fail
+
+# Player
+execute unless score @s join_game matches 1.. run return fail
+execute if function rcore:player/utils/condition/at_spawn run effect give @s resistance 4 10

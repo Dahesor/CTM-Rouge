@@ -3,7 +3,7 @@ data modify storage map: construct.grid.cells[-1] append value {connections:{neg
 execute store result storage map: construct.grid.cells[-1][-1].rid int 1 run scoreboard players get #count calculator.cr
 scoreboard players add #count calculator.cr 1
 
-execute store result storage map: construct.grid.cells[-1][-1].urid int 1 run scoreboard players add #unique_room_id data 1
+execute store result storage map: construct.grid.cells[-1][-1].urid int 1 run scoreboard players add #unique_room_id calculator.cr 1
 
 execute store result storage map: construct.grid.cells[-1][-1].meta.floorIdx int 1 run scoreboard players get #count_floor calculator.cr
 execute store result storage map: construct.grid.cells[-1][-1].meta.x int 1 run scoreboard players get #count_x calculator.cr

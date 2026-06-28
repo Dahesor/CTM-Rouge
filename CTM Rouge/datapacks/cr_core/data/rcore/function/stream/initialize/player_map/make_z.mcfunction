@@ -6,5 +6,11 @@ function rcore:stream/initialize/player_map/make_x
 data modify storage ram: emptyPlMap.ground.compiled[-2] append value {text:"",extra:["\n"]}
 data modify storage ram: emptyPlMap.ground.compiled[-1] append value {text:"",extra:["\n"]}
 
+data modify storage ram: tpPlMap.ground.compiled append from storage ram: emptyPlMap.ground.compiled[-2]
+data modify storage ram: tpPlMap.ground.compiled[-1][-1].extra prepend from storage run: _tpMapSpace
+scoreboard players set #x calculator.cr 0
+function rcore:stream/initialize/player_map/make_trigger
+data modify storage ram: tpPlMap.ground.compiled append from storage ram: emptyPlMap.ground.compiled[-1]
+
 scoreboard players add #z calculator.cr 1
 execute if score #z calculator.cr < floor.side_length options run function rcore:stream/initialize/player_map/make_z
