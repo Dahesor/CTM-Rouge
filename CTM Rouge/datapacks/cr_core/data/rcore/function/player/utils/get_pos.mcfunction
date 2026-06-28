@@ -1,6 +1,7 @@
 execute positioned ~ ~100 ~ summon marker run function rcore:player/utils/__get_pos
 scoreboard players operation @s pos_x = $this pos_x
 scoreboard players operation @s pos_z = $this pos_z
+scoreboard players operation @s rot_xz = $this rot_xz
 
 
 #We must handle different floor positions later
@@ -12,6 +13,8 @@ scoreboard players operation $this pos_z /= map_spacing options
 scoreboard players operation $this room = $this pos_z
 scoreboard players operation $this room *= floor.side_length options
 scoreboard players operation $this room += $this pos_x
+
+execute if score #loop_5 calculator.cr matches 3 unless entity @s[gamemode=spectator] run function rcore:team/map/render/player/update
 
 execute if score @s room = $this room run return 1
 

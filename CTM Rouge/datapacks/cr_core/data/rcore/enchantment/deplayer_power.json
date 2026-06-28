@@ -1,0 +1,66 @@
+{
+    "anvil_cost": 999,
+    "description": {"translate": "enchantment.deplayer_power"},
+    "max_cost": {"base": 9,"per_level_above_first": 0},
+    "min_cost": {"base": 20,"per_level_above_first": 0},
+    "max_level": 10,
+    "slots": ["mainhand","offhand"],
+    "supported_items": ["bow","crossbow"],
+    "weight": 1,
+    "effects": {
+        "damage": [
+            {
+                "effect": {
+                    "type": "multiply",
+                    "factor": {
+                        "type": "linear",
+                        "base": 1.25,
+                        "per_level_above_first": 0.25
+                    }
+                },
+                "requirements": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "direct_attacker",
+                        "predicate": {
+                            "entity_type": "#arrows"
+                        }
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "entity_type": "player"
+                        }
+                    }
+                ]
+            },
+            {
+                "effect": {
+                    "type": "add",
+                    "value": 1
+                },
+                "requirements": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "direct_attacker",
+                        "predicate": {
+                            "entity_type": "#arrows"
+                        }
+                    },
+                    {
+                        "condition": "random_chance",
+                        "chance": 0.5
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "entity_type": "player"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

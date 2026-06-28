@@ -6,7 +6,7 @@
         },
         {
             "type": "bitmap",
-            "ascent": 18,
+            "ascent": 16,
             "height": 18,
             "file":"crouge:font/player/pos_x.png",
             "chars": [
@@ -15,7 +15,7 @@
         },
         {
             "type": "bitmap",
-            "ascent": 18,
+            "ascent": 16,
             "height": 18,
             "file":"crouge:font/player/neg_x.png",
             "chars": [
@@ -24,7 +24,7 @@
         },
         {
             "type": "bitmap",
-            "ascent": 18,
+            "ascent": 16,
             "height": 18,
             "file":"crouge:font/player/pos_z.png",
             "chars": [
@@ -33,11 +33,20 @@
         },
         {
             "type": "bitmap",
-            "ascent": 18,
+            "ascent": 16,
             "height": 18,
             "file":"crouge:font/player/neg_z.png",
             "chars": [
                 "4"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 16,
+            "height": 18,
+            "file":"crouge:font/player/dead.png",
+            "chars": [
+                "0"
             ]
         }
     ]

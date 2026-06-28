@@ -1,3 +1,27 @@
 {
-    "item.terra_restore":"大地复苏"
+    "item.terra_restore":"大地复苏",
+    "item.player_map":"团队地图",
+    "item.player_map.1":"右键打开团队地图",
+    "item.player_map.2":"§d灵魂绑定",
+    "item.basic_player_bow":"【基础】玩家特弓",
+    "item.basic_player_bow.1":"命中未持有羊毛的玩家时",
+    "item.basic_player_bow.2":"造成双倍伤害",
+    "item.basic_player_bow.3":"§d灵魂绑定",
+    "enchantment.deplayer_power":"玩家特弓",
+    "item.soul_bind_arrow":"箭",
+    "item.soul_bind_arrow.1":"§a装填时间：2s",
+    "item.soul_bind_arrow.2":"就算是无限弓",
+    "item.soul_bind_arrow.3":"也得有起码一支箭",
+    "item.soul_bind_arrow.4":"§d灵魂绑定",
+    "item.team_helmet":"队伍头盔",
+    "item.team_helmet.1":"让队友认出你是个好主意",
+    "item.team_helmet.2":"让敌人认出你可能没那么好",
+    "item.team_boots":"队伍靴子",
+    "item.team_boots.1":"让队友认出你是个好主意",
+    "item.team_boots.2":"让敌人认出你可能没那么好",
+    "item.stone_sword":"石剑",
+    "item.stone_sword.1":"石头做的，比起砍人更像砸人",
+    "item.stone_sword.2":"还是多带点勇气使用它吧",
+    "item.stone_pickaxe":"石镐",
+    "item.stone_pickaxe.1":"起码很沉"
 }

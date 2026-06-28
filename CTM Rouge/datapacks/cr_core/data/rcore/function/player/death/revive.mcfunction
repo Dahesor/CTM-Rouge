@@ -27,3 +27,5 @@ execute store result storage run: i.y int 1 run scoreboard players get #y calcul
 execute store result storage run: i.z int 1 run scoreboard players get #z calculator.cr
 
 function rcore:player/death/__revive with storage run: i
+
+function rcore:menu/map/close

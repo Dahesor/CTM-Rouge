@@ -7,4 +7,5 @@ dispatch minecraft:storage["core:player"] to struct {
 
 struct Player{
     UID?: int,
+    Name?: string,
 }

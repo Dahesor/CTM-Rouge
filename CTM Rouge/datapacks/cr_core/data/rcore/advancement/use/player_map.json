@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "use":{
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "soul_bind": {
+                                "name": "player_map"
+                            }
+                        }
+                    }
+                },
+                "player": {
+                    "entity_tags": {
+                        "none_of": ["map.display"]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rcore:player/use/map"
+    }
+}

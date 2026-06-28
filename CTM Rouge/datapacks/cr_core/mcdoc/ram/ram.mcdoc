@@ -2,6 +2,7 @@ use::java::util::text::Text
 use::mcdoc::level::cell::Cell
 use::mcdoc::level::cell::CellConnetion
 use::ram::player_map::PlayerMap
+use::ram::player_map::PlayerMapLevel
 use::ram::dialogmix::DialogMix
 
 dispatch minecraft:storage["ram:"] to struct Ram{
@@ -18,6 +19,7 @@ dispatch minecraft:storage["ram:"] to struct Ram{
     map_cell?: Cell,
     broadcast?: struct{self?: Text, teammate?: Text, enemy?: Text, spectator?: Text},
     emptyPlMap?: PlayerMap,
+    thisPlMap?: PlayerMapLevel,
     dialog?: struct{
         dialog?: DialogMix,
     }

@@ -9,6 +9,8 @@ execute if score game.team_count options matches 2.. run data modify storage tea
 execute if score game.team_count options matches 3.. run data modify storage team: data[2].map set from storage ram: emptyPlMap
 execute if score game.team_count options matches 4.. run data modify storage team: data[3].map set from storage ram: emptyPlMap
 
+data modify storage team: spectate.map set from storage ram: emptyPlMap
+
 scoreboard players set #count calculator.cr 0
 function rcore:stream/start/spawn_point/pick_spawn
 
@@ -19,3 +21,8 @@ scoreboard players set game data 1
 execute as @a[scores={join_game=1..}] run function rcore:math/mapping/team--score
 
 function rcore:stream/start/spawn_point/spawn_players
+
+function rcore:stream/start/gears/helmets
+function rcore:stream/start/gears/boots
+execute as @a run function rcore:stream/start/gears/startup
+execute as @a run function rcore:player/utils/saddle_item

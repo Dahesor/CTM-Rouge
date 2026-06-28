@@ -22,6 +22,7 @@ execute store result storage run: map.pos_x int 1 run scoreboard players add #ma
 execute store result storage run: map.neg_x int 1 run scoreboard players remove #map_x calculator.cr 2
 
 function rcore:team/map/build/get_icon
+execute if data storage run: {icon_private:""} run data modify storage run: icon_private set from storage run: icon
 
 function rcore:team/map/build/__insert_icon with storage run: map
 

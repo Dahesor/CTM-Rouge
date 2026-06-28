@@ -6,6 +6,7 @@ type Team = ("red"|"blue"|"yellow"|"green")
 dispatch minecraft:storage["team:"] to struct{
     data?: [TeamStorage],
     cell?: Cell,
+    spectate?: TeamStorage
 }
 
 struct TeamStorage {

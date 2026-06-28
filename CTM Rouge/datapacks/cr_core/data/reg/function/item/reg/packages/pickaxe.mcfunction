@@ -1,0 +1,1 @@
+function reg:item/pickaxe/stone_pickaxe
