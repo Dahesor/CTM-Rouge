@@ -1,0 +1,1 @@
+execute as @a[scores={join_game=1..}] at @s run function rcore:stream/start/gears/startup
