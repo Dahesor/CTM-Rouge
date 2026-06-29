@@ -19,9 +19,11 @@ execute if data storage ram: place{rotation:"counterclockwise_90"} store result 
 function gen:place/room/__place with storage ram: place
 
 execute unless data storage ram: map_cell{type:"room"} run function gen:place/room/post/close_opening
+execute if data storage ram: map_cell{type:"room"} if score #need_blocking calculator.cr matches 1 run function gen:place/room/post/close_opening
 
 execute if data storage ram: map_cell{type:"room"} run function gen:place/room/post/spawner
 execute if data storage ram: map_cell{type:"teleporter"} run function gen:place/room/post/tp
+execute if data storage ram: map_cell{type:"shop"} run function gen:place/room/post/shop/prep
 
 execute if data storage run: rm{pos_z:true} run function gen:place/room/path/up
 execute if data storage run: rm{pos_x:true} run function gen:place/room/path/left

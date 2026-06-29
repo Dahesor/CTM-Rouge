@@ -1,5 +1,7 @@
 {
     "values": [
-        "reg:mob/packages/overworld_night"
+        "reg:mob/packages/overworld_night",
+        "reg:mob/packages/overworld_day",
+        "reg:mob/packages/nether"
     ]
 }

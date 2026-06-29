@@ -1,0 +1,21 @@
+use::reg::structure_set::RegisteredSets
+
+dispatch minecraft:storage["reg:template"] to struct{
+    reg?: [Template],
+    this?: Template,
+}
+
+struct Template{
+    type?: RoomPoolType,
+    author?: string,
+    resource?: #[id="structure"] string,
+    set?: [RegisteredSets],
+}
+
+enum(string) RoomPoolType {
+    FourWay = "four_way",
+    ThreeWay = "three_way",
+    Straight = "straight",
+    Corner = "corner",
+    DeadEnd = "deadend",
+}

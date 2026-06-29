@@ -1,0 +1,2 @@
+data modify storage reg:template reg append value {author:"heilongson",type:"four_way",set:["all"],resource:"four_way:deep_dark/dead_bodiy_heilongson"}
+data modify storage reg:template reg append value {author:"heilongson",type:"four_way",set:["all"],resource:"four_way:natural/bamboo_plaza_heilongson"}

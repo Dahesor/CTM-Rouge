@@ -7,8 +7,12 @@ execute if score #loop_5 calculator.cr matches 5.. run scoreboard players set #l
 
 # ========== pre =============
 
-scoreboard players add time data 1
 execute as @a at @s run function rcore:player/ticker
 execute as @e[type=item,tag=!legal_drop] if items entity @s contents *[custom_data~{soul_bind:{}}] run kill
 
 # ========== aft =============
+
+#Game on
+execute unless score game data matches 1.. run return fail
+scoreboard players add time data 1
+execute if score time data > GameLength options run function rcore:stream/end/end

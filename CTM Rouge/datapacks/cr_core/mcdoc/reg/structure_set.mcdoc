@@ -1,0 +1,19 @@
+use::reg::template::Template
+use::reg::template::RoomPoolType
+use::reg::enemy_pool::SpawnerMobSeries
+
+enum(string) RegisteredSets{
+    all = "all"
+}
+
+dispatch minecraft:storage["reg:structure_set"] to struct{
+    reg?: [StructureSet],
+    this?: StructureSet,
+    candidates?: [Template],
+}
+
+struct StructureSet{
+    templates?: struct{[RoomPoolType]: [Template]},
+    use_mobs?: [SpawnerMobSeries],
+    id?: string,
+}

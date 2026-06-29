@@ -1,0 +1,1 @@
+data modify storage reg:template reg append value {author:"Baimo",type:"four_way",set:["all"],resource:"four_way:natural/forest_way_baimo"}

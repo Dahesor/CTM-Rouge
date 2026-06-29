@@ -25,21 +25,20 @@ struct EnemyPool{
 
 type SpawnerMobSeries = (
     "undead"|
-    "zombie"|
-    "skeleton"|
     "overworld"|
     "overworld_night"|
     "overworld_day"|
-    "overworld_cave"|
+    "cave"|
     "illager"|
     "nether"|
     "nether_fortress"|
     "nether_bastion"|
     "end"|
-    "end_city"|
     "ocean"|
     "deep_dark"|
     "swamp"|
     "trial_chamber"|
-    "magic"
+    "magic"|
+    "icy"|
+    "any"
 )

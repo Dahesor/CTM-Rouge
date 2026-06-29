@@ -65,6 +65,7 @@ struct SpawnPoints{
 struct Teleporters{
     ...CellMeta,
     urid?: int,
+    team?: Team,
 }
 
 struct Shops{

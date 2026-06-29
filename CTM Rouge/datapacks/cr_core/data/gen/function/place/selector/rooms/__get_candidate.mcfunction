@@ -1,0 +1,1 @@
+$data modify storage reg:template this set from storage reg:structure_set candidates[$(i)]

@@ -1,7 +1,13 @@
 use::mcdoc::level::cell::SpawnPoints
 use::ram::player_map::PlayerMap
 use::mcdoc::level::cell::Cell
-type Team = ("red"|"blue"|"yellow"|"green")
+type Team = #[color="named"] TeamColor
+enum(string) TeamColor{
+    red = "red",
+    blue = "blue",
+    yellow = "yellow",
+    green = "green"
+}
 
 dispatch minecraft:storage["team:"] to struct{
     data?: [TeamStorage],

@@ -1,0 +1,3 @@
+data modify storage reg:template reg append value {author:"Akatona",type:"four_way",set:["all"],resource:"four_way:icy/taiga_akatona"}
+data modify storage reg:template reg append value {author:"Akatona",type:"four_way",set:["all"],resource:"four_way:icy/forzen_ocean_akatona"}
+data modify storage reg:template reg append value {author:"Akatona",type:"four_way",set:["all"],resource:"four_way:nether/copper_man_akatona"}

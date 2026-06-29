@@ -1,0 +1,1 @@
+function reg:mob/nether/fortress

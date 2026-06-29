@@ -1,0 +1,40 @@
+{
+    "anvil_cost": 999,
+    "description": "冲刺破甲",
+    "max_cost": {"base": 9,"per_level_above_first": 0},
+    "min_cost": {"base": 20,"per_level_above_first": 0},
+    "max_level": 1,
+    "slots": ["mainhand"],
+    "supported_items": "#spears",
+    "weight": 1,
+    "effects": {
+        "damage": [
+            {
+                "effect": {
+                    "type": "add",
+                    "value": -8
+                },
+                "requirements": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "entity_type": "player"
+                        }
+                    },
+                    {
+                        "condition": "damage_source_properties",
+                        "predicate": {
+                            "tags": [
+                                {
+                                    "expected": true,
+                                    "id": "rcore:spear"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

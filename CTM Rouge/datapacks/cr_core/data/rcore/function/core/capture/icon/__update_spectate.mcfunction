@@ -1,0 +1,1 @@
+$execute if score $this floor matches 0 run data modify storage team: spectate.map.ground.compiled[$(z)][$(x)] set from storage run: icon

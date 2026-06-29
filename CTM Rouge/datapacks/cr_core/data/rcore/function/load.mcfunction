@@ -31,6 +31,7 @@ scoreboard objectives add reciving dummy
 scoreboard objectives add input trigger
 scoreboard objectives add tp.target dummy
 scoreboard objectives add tp.cd dummy
+scoreboard objectives add score dummy "分数"
 
 team add red
 team add blue

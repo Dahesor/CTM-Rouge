@@ -1,1 +1,4 @@
-data modify storage ram: struct_res.res set value "three_way:deep_dark/hallway_1"
+data modify storage reg:structure_set candidates set from storage reg:structure_set this.templates.three_way
+function gen:place/selector/rooms/random
+
+data modify storage ram: struct_res.res set from storage reg:template this.resource

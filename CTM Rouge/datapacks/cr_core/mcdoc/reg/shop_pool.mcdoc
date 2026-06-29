@@ -3,12 +3,9 @@ use::reg::item::ItemRarity
 
 dispatch minecraft:storage["reg:shop_pool"] to struct{
     reg?: [ShopPool],
+    this?: [RegistryItem]
 }
 
 struct ShopPool{
-    [ItemRarity]?: [ShopPoolEntry],
-}
-
-struct ShopPoolEntry{
-    item: RegistryItem,
+    [ItemRarity]?: [RegistryItem],
 }

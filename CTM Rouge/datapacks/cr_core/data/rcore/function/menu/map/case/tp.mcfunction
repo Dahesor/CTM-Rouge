@@ -4,7 +4,7 @@ execute if score @s team matches 1.. run function rcore:math/team_list/self_scor
 
 data modify storage ram: thisPlMap set from storage team: data[0].map.ground
 
-function rcore:menu/map/template
+function rcore:menu/map/case/trigger/template_tp
 
 execute if score @s team matches 1.. run data modify storage ram: thisPlMap set from storage team: data[0].map.ground
 execute unless score @s team matches 1.. run data modify storage ram: thisPlMap set from storage team: spectate.map.ground

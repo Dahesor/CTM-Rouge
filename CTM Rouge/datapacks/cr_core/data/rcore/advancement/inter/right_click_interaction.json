@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "rcore:shop/trigger/left_click"
+        "function": "rcore:shop/trigger/right_click"
     }
 }

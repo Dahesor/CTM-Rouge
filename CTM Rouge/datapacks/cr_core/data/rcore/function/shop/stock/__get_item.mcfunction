@@ -1,0 +1,1 @@
+$data modify storage reg:item this set from storage reg:shop_pool this[$(i)]

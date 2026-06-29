@@ -1,0 +1,17 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "crouge:spaces"
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 18,
+            "file":"crouge:font/player/losing.png",
+            "chars": [
+                "L"
+            ]
+        }
+    ]
+}

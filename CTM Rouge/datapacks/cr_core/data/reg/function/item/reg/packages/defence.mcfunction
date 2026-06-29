@@ -1,0 +1,15 @@
+function reg:item/defence/old_shield
+function reg:item/defence/iron_chestplate
+function reg:item/defence/iron_leggings
+function reg:item/defence/leather_chestplate
+function reg:item/defence/leather_leggings
+function reg:item/defence/golden_chestplate
+function reg:item/defence/golden_leggings
+function reg:item/defence/copper_chestplate
+function reg:item/defence/copper_leggings
+function reg:item/defence/diamond_chestplate
+function reg:item/defence/diamond_leggings
+function reg:item/defence/chainmail_chestplate
+function reg:item/defence/chainmail_leggings
+function reg:item/defence/netherite_chestplate
+function reg:item/defence/netherite_leggings

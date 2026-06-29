@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "spear_hurt":{
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "dealt": {
+                        "min": 0.1
+                    },
+                    "source_entity": {
+                        "entity_type": "player"
+                    },
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "rcore:spear"
+                            }
+                        ]
+                    }
+                },
+                "player": {
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rcore:player/utils/spear_compensation"
+    }
+}

@@ -1,9 +1,11 @@
 use::java::util::text::Text
 use::mcdoc::level::cell::Cell
 use::mcdoc::level::cell::CellConnetion
+use::mcdoc::custom_data::shopStock
 use::ram::player_map::PlayerMap
 use::ram::player_map::PlayerMapLevel
 use::ram::dialogmix::DialogMix
+use::core::team::Team
 
 dispatch minecraft:storage["ram:"] to struct Ram{
     stack?: [Ram],
@@ -24,7 +26,16 @@ dispatch minecraft:storage["ram:"] to struct Ram{
     thisPlMap?: PlayerMapLevel,
     dialog?: struct{
         dialog?: DialogMix,
-    }
+    },
+    color?: Team,
+    dec?: struct{
+        [(DecListNames|string)]?: DecList,
+    },
+    shopStock?: shopStock,
+}
+
+enum(string) DecListNames{
+    u = "u",
 }
 
 struct DisJoint{
@@ -57,4 +68,14 @@ struct vec3{
 struct Edge{
     from?: int,
     to?: int,
+}
+
+struct DecList{
+    Fixed?: [
+        struct{
+            x_shift?: int,
+            z_line?: int,
+            text?: string,
+        }
+    ],
 }

@@ -2,7 +2,7 @@ data modify storage run: icon_private set value ""
 
 execute if data storage team: cell{type:"room"} run return run data modify storage run: icon set value "r-"
 execute if data storage team: cell{type:"shop"} run return run data modify storage run: icon set value "s-"
-execute if data storage team: cell{type:"teleporter"} run return run data modify storage run: icon set value "t-"
+execute if data storage team: cell{type:"teleporter"} run return run function rcore:team/map/build/teleport_icon
 
 execute if function rcore:player/utils/condition/at_spawn run data modify storage run: icon_private set value "H-"
 execute if data storage team: cell{type:"spawn"}.spawn_room{owner:"red"} run return run data modify storage run: icon set value "R-"

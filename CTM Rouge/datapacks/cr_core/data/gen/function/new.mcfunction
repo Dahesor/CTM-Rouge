@@ -1,6 +1,9 @@
 # Setup the seed and random sequences
 function gen:random/seqs
 
+#For now, use the "all" set
+data modify storage reg:structure_set this set from storage reg:structure_set reg[{id:"all"}]
+
 # Initialize disjoint set and calculate all edges that can be connected
 data modify storage ram: disjoint set value {input_1:0,input_2:0}
 scoreboard players operation %room_count calculator.cr = floor.side_length options

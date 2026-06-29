@@ -1,0 +1,2 @@
+scoreboard players operation $this room = @s room
+execute as @a[scores={join_game=1..},distance=..100] if score @s room = $this room run title @s actionbar {translate:"actionbar.contested",color:"light_purple"}

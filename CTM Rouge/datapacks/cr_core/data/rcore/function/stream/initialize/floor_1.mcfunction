@@ -11,7 +11,8 @@ data modify storage run: _tpMapSpace set value [{text:"",font:"crouge:map"}]
 function rcore:stream/initialize/player_map/tpmap_respace
 
 scoreboard players set #z calculator.cr 0
-scoreboard players set #trigger calculator.cr 99
+scoreboard players operation #trigger calculator.cr = floor.room_count options
+scoreboard players add #trigger calculator.cr 100
 function rcore:stream/initialize/player_map/make_z
 
 scoreboard players operation floor_1.x data = floor.base.x options

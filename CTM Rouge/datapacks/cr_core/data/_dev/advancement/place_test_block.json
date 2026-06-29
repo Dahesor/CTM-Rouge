@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "placed_spawner": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "test_block"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "_dev:shop/placed"
+    }
+}

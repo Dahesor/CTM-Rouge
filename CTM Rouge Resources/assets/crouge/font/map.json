@@ -35,9 +35,45 @@
             "type": "bitmap",
             "ascent": 10,
             "height": 12,
-            "file":"crouge:font/map/tp.png",
+            "file":"crouge:font/map/tp_none.png",
             "chars": [
                 "t"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/tp_red.png",
+            "chars": [
+                "e"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/tp_blue.png",
+            "chars": [
+                "l"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/tp_yellow.png",
+            "chars": [
+                "o"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/tp_green.png",
+            "chars": [
+                "z"
             ]
         },
         {

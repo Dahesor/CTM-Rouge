@@ -19,6 +19,10 @@
                                 {
                                     "expected": true,
                                     "id": "is_player_attack"
+                                },
+                                {
+                                    "expected": false,
+                                    "id": "rcore:spear"
                                 }
                             ]
                         }

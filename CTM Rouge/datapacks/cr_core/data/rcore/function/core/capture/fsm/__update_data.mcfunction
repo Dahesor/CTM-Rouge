@@ -1,0 +1,1 @@
+$execute if score @s floor matches 0 run data modify storage map: ground.tp[{urid:$(i)}].team set from storage ram: color

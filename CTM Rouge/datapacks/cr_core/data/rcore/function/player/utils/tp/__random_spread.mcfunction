@@ -1,0 +1,1 @@
+$execute rotated ~$(i) 0 run tp @s ^ ^ ^3

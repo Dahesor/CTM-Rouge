@@ -1,6 +1,6 @@
 scoreboard players set $spawner_count calculator.cr 0
 
-execute as @e[type=marker,tag=pre.game_clear,distance=..100] at @s run function gen:spawner/check
+execute as @e[type=marker,tag=pre.game_clear,distance=..100,tag=cr.spawner] at @s run function gen:spawner/check
 kill @e[type=marker,tag=dabsu.marker,distance=..100]
 
 #For test, use only this pool

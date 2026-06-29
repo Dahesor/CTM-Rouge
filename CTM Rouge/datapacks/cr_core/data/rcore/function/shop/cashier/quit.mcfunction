@@ -1,0 +1,1 @@
+tag @e[type=interaction,tag=__target_shop,limit=1,distance=..20] remove __target_shop
