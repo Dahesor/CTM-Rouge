@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "spawner_fix",
+	"version": "${version}",
+	"name": "Spawner Fix",
+	"description": "A fix for MC-307449",
+	"authors": [
+		"Dahesor"
+	],
+	"contact": {
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/spawner_fix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.dahesor.SpawnerFixMod"
+		]
+	},
+	"mixins": [
+		"spawner_fix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

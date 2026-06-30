@@ -1,4 +1,44 @@
 copy.bat
 **/.vscode/**
-CTM Rouge/players/**
+/CTM Rouge/players/**
 level.dat_old
+
+# gradle
+
+.gradle/
+/Spawner-Light-Fix/build/
+/Spawner-Light-Fix/out/
+/Spawner-Light-Fix/classes/
+
+# eclipse
+
+*.launch
+
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# vscode
+
+.settings/
+.vscode/
+.classpath
+.project
+
+# macos
+
+*.DS_Store
+
+# fabric
+
+/Spawner-Light-Fix/run/
+
+# java
+
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr
