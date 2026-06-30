@@ -1,10 +1,25 @@
-﻿- name: Sync-GitHub-Release-to-Gitee
-  uses: trustedinster/sync-release-gitee@v1.3
-  with:
-    gitee_owner: Dahesor
-    gitee_repo: CTM-Rouge
-    gitee_token: ${{ secrets.GITEE_TOKEN }}
-    github_owner: Dahesor
-    github_repo: CTM-Rouge
-    gitee_upload_retry_times: 3
-    debug: false
+﻿name: Sync Release to Gitee
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+     -name: Sync GitHub Release to Gitee
+      uses: trustedinster/sync-release-gitee@v1.3
+      with:
+        gitee_owner: Dahesor
+        gitee_repo: CTM-Rouge
+        gitee_token: ${{ secrets.GITEE_TOKEN }}
+        github_owner: Dahesor
+        github_repo: CTM-Rouge
+        gitee_upload_retry_times: 3
+        debug: false
