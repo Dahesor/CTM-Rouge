@@ -126,5 +126,13 @@
   "item.advance_player_bow": "【高级】玩家特弓",
   "item.advance_player_bow.1": "命中未持有羊毛的玩家时",
   "item.advance_player_bow.2": "造成2.25倍伤害",
-  "shop.price":"花费绿宝石：%s"
+  "shop.price": "花费绿宝石：%s",
+  "menu.map.title": "地图：第%s层",
+  "sign.to_floor_1": "深入二层",
+  "sign.no_return": "警告：单程票",
+  "sign.need_key.1_2": "需要y型楼梯间钥匙",
+  "sign.click_to_unlock": "[点击解锁]",
+  "item.f1_secret_key": "y型楼梯间钥匙",
+  "item.f1_secret_key.1": "树脂做的钥匙",
+  "item.f1_secret_key.2": "或许可以打开某处的门"
 }

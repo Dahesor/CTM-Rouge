@@ -131,6 +131,79 @@
             ]
         },
 
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/stairs/1.png",
+            "chars": [
+                "Q"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/stairs/1_lock.png",
+            "chars": [
+                "W"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/stairs/2.png",
+            "chars": [
+                "P"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/empty.png",
+            "chars": [
+                "E"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/stairs/2_lock.png",
+            "chars": [
+                "T"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/stairs/2_time.png",
+            "chars": [
+                "U"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/stairs/3.png",
+            "chars": [
+                "I"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/stairs/3_lock.png",
+            "chars": [
+                "O"
+            ]
+        },
+
 
 
         {

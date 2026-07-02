@@ -16,6 +16,7 @@ dispatch minecraft:storage["ram:"] to struct Ram{
     i?: struct{i?:any},
     rm?: [CellConnetion],
     map?: [Cell],
+    stair_list?: [Cell],
     pos?: vec3,
     struct_res?: struct{res?: #[id="structure"] string},
     place?: StructurePlaceVars,

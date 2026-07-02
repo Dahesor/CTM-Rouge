@@ -20,7 +20,8 @@ struct Cell {
     },
     spawn_room?: struct{
         owner?: Team,
-    }
+    },
+    stair_room?: stair_room,
 }
 
 struct CellConnetion{
@@ -30,6 +31,7 @@ struct CellConnetion{
     neg_z?: boolean,
     floor_up?: boolean,
     floor_down?: boolean,
+    anyconnect?: boolean,
 }
 
 enum(string) CellTypes{
@@ -54,6 +56,14 @@ enum(string) CellTypes{
 }
 
 enum(string) SpecialTypes{
+    f1secrs = "f1_secrect_exit"
+}
+
+struct stair_room{
+    x?: int,
+    z?: int,
+    to_floor?: int,
+    needs_key?: boolean,
 }
 
 struct SpawnPoints{

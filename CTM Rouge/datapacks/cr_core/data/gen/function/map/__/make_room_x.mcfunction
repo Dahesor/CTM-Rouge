@@ -5,7 +5,7 @@ scoreboard players add #count calculator.cr 1
 
 execute store result storage map: construct.grid.cells[-1][-1].urid int 1 run scoreboard players add #unique_room_id calculator.cr 1
 
-execute store result storage map: construct.grid.cells[-1][-1].meta.floorIdx int 1 run scoreboard players get #count_floor calculator.cr
+execute store result storage map: construct.grid.cells[-1][-1].meta.floorIdx int 1 run scoreboard players get floor.level options
 execute store result storage map: construct.grid.cells[-1][-1].meta.x int 1 run scoreboard players get #count_x calculator.cr
 execute store result storage map: construct.grid.cells[-1][-1].meta.z int 1 run scoreboard players get #count_z calculator.cr
 

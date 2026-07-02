@@ -15,6 +15,7 @@ scoreboard objectives add join_game dummy
 scoreboard objectives add emerald dummy
 scoreboard objectives add monitor.spawner_mined mined:spawner
 scoreboard objectives add pos_x dummy
+scoreboard objectives add pos_y dummy
 scoreboard objectives add pos_z dummy
 scoreboard objectives add rot_xz dummy
 scoreboard objectives add map_z dummy
@@ -32,6 +33,7 @@ scoreboard objectives add input trigger
 scoreboard objectives add tp.target dummy
 scoreboard objectives add tp.cd dummy
 scoreboard objectives add score dummy "分数"
+scoreboard objectives add viewing_map dummy
 
 team add red
 team add blue

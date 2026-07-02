@@ -1,5 +1,3 @@
-# Setup the seed and random sequences
-function gen:random/seqs
 
 #For now, use the "all" set
 data modify storage reg:structure_set this set from storage reg:structure_set reg[{id:"all"}]
@@ -21,6 +19,8 @@ function gen:disjoint/base/build
 # Now randomly add edges to the graph
 function gen:disjoint/open/open
 
+# Special cases
+function gen:map/stairs/f0/transform_test
+
 # Place structures
-function gen:test/sample_rooms
 function gen:place/init

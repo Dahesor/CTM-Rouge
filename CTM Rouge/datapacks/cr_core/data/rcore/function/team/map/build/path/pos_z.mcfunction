@@ -1,2 +1,6 @@
-$data modify storage team: data[0].map.ground.compiled[-$(pos_z)][-$(x_path)] set value "v+"
-$data modify storage team: spectate.map.ground.compiled[-$(pos_z)][-$(x_path)] set value "v+"
+$execute if score @s floor matches 0 run data modify storage team: data[0].map.ground.compiled[-$(pos_z)][-$(x_path)] set value "v+"
+$execute if score @s floor matches 0 run data modify storage team: spectate.map.ground.compiled[-$(pos_z)][-$(x_path)] set value "v+"
+$execute if score @s floor matches 1 run data modify storage team: data[0].map.upper.compiled[-$(pos_z)][-$(x_path)] set value "v+"
+$execute if score @s floor matches 1 run data modify storage team: spectate.map.upper.compiled[-$(pos_z)][-$(x_path)] set value "v+"
+$execute if score @s floor matches 2 run data modify storage team: data[0].map.top.compiled[-$(pos_z)][-$(x_path)] set value "v+"
+$execute if score @s floor matches 2 run data modify storage team: spectate.map.top.compiled[-$(pos_z)][-$(x_path)] set value "v+"

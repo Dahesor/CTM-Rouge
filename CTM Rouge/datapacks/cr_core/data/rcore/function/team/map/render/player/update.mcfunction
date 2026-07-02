@@ -1,8 +1,12 @@
 #ground floor
 scoreboard players operation $this pos_x = @s pos_x
 scoreboard players operation $this pos_z = @s pos_z
-scoreboard players operation $this pos_x -= floor_1.x data
-scoreboard players operation $this pos_z -= floor_1.z data
+execute if score @s floor matches 0 run scoreboard players operation $this pos_x -= floor_0.x data
+execute if score @s floor matches 0 run scoreboard players operation $this pos_z -= floor_0.z data
+execute if score @s floor matches 1 run scoreboard players operation $this pos_x -= floor_1.x data
+execute if score @s floor matches 1 run scoreboard players operation $this pos_z -= floor_1.z data
+execute if score @s floor matches 2 run scoreboard players operation $this pos_x -= floor_2.x data
+execute if score @s floor matches 2 run scoreboard players operation $this pos_z -= floor_2.z data
 
 #> Calc Pixel Coord
 # x coord

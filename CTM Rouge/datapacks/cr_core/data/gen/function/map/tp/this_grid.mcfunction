@@ -1,4 +1,3 @@
-
 execute unless function gen:map/random_spread/start run return run function gen:map/tp/next_grid
 
 data modify storage run: i set value {x:0,z:0}

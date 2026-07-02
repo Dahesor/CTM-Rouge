@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0":"crouge:item/key/f1_secret_key"
+    }
+}

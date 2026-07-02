@@ -1,6 +1,10 @@
 data modify storage team: data set value []
 clear @a
 effect clear @a
+time set 13000
+effect give @a instant_health 1 100 true
+effect give @a saturation 5 10 true
+effect give @a resistance 10 10 true
 execute if score game.team_count options matches 1.. run data modify storage team: data append value {team:"red",team_id:1}
 execute if score game.team_count options matches 2.. run data modify storage team: data append value {team:"blue",team_id:2}
 execute if score game.team_count options matches 3.. run data modify storage team: data append value {team:"yellow",team_id:3}
@@ -22,6 +26,7 @@ scoreboard players reset * death
 scoreboard players reset * revive_cd
 scoreboard players set game data 1
 scoreboard players set time data 0
+scoreboard players set @a viewing_map 0
 scoreboard players set @a[scores={join_game=1..}] room -1
 execute as @a[scores={join_game=1..}] run function rcore:math/mapping/team--score
 

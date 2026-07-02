@@ -1,4 +1,5 @@
 use::mcdoc::level::grid::Grid
+use::mcdoc::level::cell::Cell
 use::mcdoc::level::cell::SpawnPoints
 use::mcdoc::level::cell::Teleporters
 use::mcdoc::level::cell::Shops
@@ -15,4 +16,5 @@ dispatch minecraft:storage["map:"] to struct{
     upper?: Floor,
     top?: Floor,
     construct?: Floor,
+    stairs?: [Cell],
 }

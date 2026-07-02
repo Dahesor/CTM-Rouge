@@ -1,7 +1,7 @@
 # Get Room Base Coord
-scoreboard players operation #x calculator.cr = floor_1.x data
-scoreboard players operation #y calculator.cr = floor_1.y data
-scoreboard players operation #z calculator.cr = floor_1.z data
+scoreboard players operation #x calculator.cr = floor_0.x data
+scoreboard players operation #y calculator.cr = floor_0.y data
+scoreboard players operation #z calculator.cr = floor_0.z data
 scoreboard players operation #delta calculator.cr = ROOM_SIZE options
 scoreboard players operation #delta calculator.cr += TUNNEL_SPACE options
 

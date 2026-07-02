@@ -9,6 +9,10 @@ dispatch mcdoc:custom_data["captureIconCache"] to struct {
     icon?: string,
 }
 
+dispatch mcdoc:custom_data["item"] to struct {
+    id?: string,
+}
+
 dispatch mcdoc:custom_data["inStock"] to struct shopStock {
     item?: RegistryItem,
     has_stock?: boolean,

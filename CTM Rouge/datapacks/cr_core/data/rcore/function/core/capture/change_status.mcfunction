@@ -1,6 +1,6 @@
 function rcore:team/count_reset
 scoreboard players operation $this room = @s room
-execute as @a[gamemode=!spectator,scores={team=1..}] if score @s room = $this room run function rcore:team/count_self
+execute as @a[gamemode=!spectator,scores={team=1..},tag=in_room] if score @s room = $this room run function rcore:team/count_self
 
 #Case: Peace since no one inside
 execute unless score #total calculator.cr matches 1.. run return run function rcore:core/capture/status/peace

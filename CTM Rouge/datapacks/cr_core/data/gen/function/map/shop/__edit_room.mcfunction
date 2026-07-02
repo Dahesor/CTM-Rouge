@@ -16,7 +16,7 @@ $data modify storage map: construct.grid.cells[$(z)][$(x)] merge from storage ra
 $data modify storage ram: map_cell set from storage map: construct.grid.cells[$(z)][$(x)]
 
 data modify storage map: construct.shop append value {floorIdx:0,x:0,z:0,urid:-1}
-execute store result storage map: construct.shop[-1].floorIdx int 1 run scoreboard players get #count_floor calculator.cr
+execute store result storage map: construct.shop[-1].floorIdx int 1 run scoreboard players get floor.level options
 $data modify storage map: construct.shop[-1].x set value $(x)
 $data modify storage map: construct.shop[-1].z set value $(z)
 $data modify storage map: construct.shop[-1].urid set from storage map: construct.grid.cells[$(z)][$(x)].urid
