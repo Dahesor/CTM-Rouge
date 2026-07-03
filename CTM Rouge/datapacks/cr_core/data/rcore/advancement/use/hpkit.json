@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "using_hpkit":{
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "item": {
+                                "class": "hpkit"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rcore:player/use/hpkit/trigger"
+    }
+}

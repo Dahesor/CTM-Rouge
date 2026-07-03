@@ -17,6 +17,15 @@
             "type": "bitmap",
             "ascent": 10,
             "height": 12,
+            "file":"crouge:font/map/room_done.png",
+            "chars": [
+                "d"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
             "file":"crouge:font/map/void.png",
             "chars": [
                 "n"

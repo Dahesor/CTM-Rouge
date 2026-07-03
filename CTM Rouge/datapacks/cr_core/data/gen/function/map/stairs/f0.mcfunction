@@ -10,7 +10,7 @@ execute if score #rand calculator.cr matches 2.. run scoreboard players add #z c
 execute if score #rand calculator.cr matches 1 run scoreboard players add #x calculator.cr 1
 execute if score #rand calculator.cr matches 3 run scoreboard players add #x calculator.cr 1
 
-data modify storage run: i set value {x:0,z:0,target:1}
+data modify storage run: i set value {x:0,z:0,target:1,f0tl:true}
 execute store result storage run: i.x int 1 run scoreboard players get #x calculator.cr
 execute store result storage run: i.z int 1 run scoreboard players get #z calculator.cr
 

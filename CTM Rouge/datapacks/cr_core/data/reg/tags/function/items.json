@@ -4,6 +4,7 @@
         "reg:item/reg/packages/weapon",
         "reg:item/reg/packages/soul_bind",
         "reg:item/reg/packages/pickaxe",
-        "reg:item/reg/packages/defence"
+        "reg:item/reg/packages/defence",
+        "reg:item/reg/packages/support"
     ]
 }

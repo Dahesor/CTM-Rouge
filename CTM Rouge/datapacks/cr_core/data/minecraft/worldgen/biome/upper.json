@@ -1,0 +1,32 @@
+{
+  "attributes": {
+    "visual/sky_color": "#3b3d42",
+    "visual/fog_color": "#6e7179",
+    "visual/cloud_height": 999,
+    "visual/star_brightness": 0,
+    "gameplay/monsters_burn": false,
+    "visual/sun_angle": 180,
+    "visual/moon_angle": 180
+  },
+  "carvers": [],
+  "downfall": 0,
+  "effects": {
+    "water_color": "#3f76e4"
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {},
+  "temperature": 2
+}

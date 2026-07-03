@@ -15,7 +15,8 @@
     "visual/cloud_color": "#ccffffff",
     "visual/cloud_height": 192.33,
     "visual/fog_color": "#c0d8ff",
-    "visual/sky_color": "#78a7ff"
+    "visual/sky_color": "#78a7ff",
+    "gameplay/monsters_burn": false
   },
   "coordinate_scale": 1,
   "default_clock": "overworld",

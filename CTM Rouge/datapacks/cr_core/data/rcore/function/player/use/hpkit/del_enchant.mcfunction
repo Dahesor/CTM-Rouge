@@ -1,0 +1,1 @@
+item modify entity @s saddle {function:"set_enchantments",enchantments:{"rcore:heal_1":0}}

@@ -134,5 +134,21 @@
   "sign.click_to_unlock": "[点击解锁]",
   "item.f1_secret_key": "y型楼梯间钥匙",
   "item.f1_secret_key.1": "树脂做的钥匙",
-  "item.f1_secret_key.2": "或许可以打开某处的门"
+  "item.f1_secret_key.2": "或许可以打开某处的门",
+  "item.basic_hpkit": "基础医疗包",
+  "item.basic_hpkit.1": "放置于主手中，长按右键使用",
+  "item.basic_hpkit.2": "可缓慢为自己恢复生命值",
+  "item.basic_hpkit.3": "受到伤害会中断恢复",
+  "item.basic_hpkit.4": "§a预热时间：2s",
+  "item.basic_hpkit.5": "§a恢复间隔：1.5s",
+  "item.basic_hpkit.6": "§d灵魂绑定",
+  "item.advanced_hpkit": "进阶医疗包",
+  "item.advanced_hpkit.1": "放置于主手中，长按右键使用",
+  "item.advanced_hpkit.2": "可缓慢为自己恢复生命值",
+  "item.advanced_hpkit.3": "受到伤害会中断恢复",
+  "item.advanced_hpkit.4": "§a预热时间：2s",
+  "item.advanced_hpkit.5": "§a恢复间隔：1s",
+  "actionbar.in_stairs.down":"楼梯间：可前往上一层",
+  "actionbar.in_stairs.up":"楼梯间：可前往下一层",
+  "actionbar.in_stairs.up.locked":"楼梯间锁定：游戏开始十分钟后解锁"
 }

@@ -11,7 +11,15 @@ dispatch mcdoc:custom_data["captureIconCache"] to struct {
 
 dispatch mcdoc:custom_data["item"] to struct {
     id?: string,
+    class?: ItemClass,
 }
+
+dispatch mcdoc:custom_data["hpkit"] to struct {
+    warm_up?: int,
+    interval?: int,
+}
+
+type ItemClass = ("hpkit")
 
 dispatch mcdoc:custom_data["inStock"] to struct shopStock {
     item?: RegistryItem,

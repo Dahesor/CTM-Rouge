@@ -18,3 +18,4 @@ execute if entity @s[tag=in_stairs,gamemode=!spectator] run function rcore:core/
 function rcore:player/utils/location/get_pos
 function rcore:player/use/bow
 execute if score #loop_5 calculator.cr matches 4 unless entity @s[gamemode=spectator] run function rcore:player/utils/soul_bind/main
+execute unless score @s hpkit matches 0 run function rcore:player/use/hpkit/tick_run

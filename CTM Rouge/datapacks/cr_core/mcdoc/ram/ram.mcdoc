@@ -1,4 +1,5 @@
 use::java::util::text::Text
+use::java::world::item::ItemStack
 use::mcdoc::level::cell::Cell
 use::mcdoc::level::cell::CellConnetion
 use::mcdoc::custom_data::shopStock
@@ -14,6 +15,7 @@ dispatch minecraft:storage["ram:"] to struct Ram{
     disjoint?: DisJoint,
     list?: [any],
     i?: struct{i?:any},
+    item?: ItemStack,
     rm?: [CellConnetion],
     map?: [Cell],
     stair_list?: [Cell],

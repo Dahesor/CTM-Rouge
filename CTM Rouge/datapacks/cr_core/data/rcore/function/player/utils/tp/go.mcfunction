@@ -1,5 +1,5 @@
 clear @s *[custom_data~{soul_bind:{name:"arrow"}}]
-effect give @s resistance 3 10
+effect give @s[gamemode=!spectator,gamemode=!creative] resistance 3 10
 
 #Drop terra restore
 execute store result score #item_count calculator.cr run clear @s *[custom_data~{isTerraRestore:true}]

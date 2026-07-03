@@ -1,5 +1,6 @@
-execute unless score game data matches 1.. run effect give @a saturation 30 0 true
+effect give @a saturation 30 0 true
 execute unless score game data matches 1.. run effect give @a resistance 2 10 true
+execute unless score game data matches 1.. run effect give @a instant_health 30 0 true
 execute as @a at @s run function rcore:player/second
 
 execute as @e[type=marker,tag=pre.game_clear,tag=cr.spawner] at @s unless block ~ ~ ~ spawner run kill @s

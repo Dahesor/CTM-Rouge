@@ -2,6 +2,7 @@ data modify storage ram: map_cell set value {type:"stairs",connections:{},stair_
 data modify storage ram: map_cell.stair_room.x set from storage run: i.x
 data modify storage ram: map_cell.stair_room.z set from storage run: i.z
 data modify storage ram: map_cell.stair_room.to_floor set from storage run: i.target
+execute if data storage run: i{f0tl:true} run data modify storage ram: map_cell.stair_room.f0_time_lock set value true
 
 execute store result score #temp calculator.cr run data get storage run: i.target
 execute if score #temp calculator.cr > floor.level options run data modify storage ram: map_cell.connections.floor_up set value true

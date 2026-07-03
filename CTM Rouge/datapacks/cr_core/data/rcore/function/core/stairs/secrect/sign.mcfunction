@@ -11,3 +11,5 @@ execute positioned ~ ~ ~-1 if block ~ ~ ~ resin_block run setblock ~ ~ ~ air des
 
 fill ~-2 ~-2 ~-2 ~2 ~2 ~2 air replace resin_block
 playsound block.resin.break
+
+scoreboard players set secrect.f0.stof1 data 1

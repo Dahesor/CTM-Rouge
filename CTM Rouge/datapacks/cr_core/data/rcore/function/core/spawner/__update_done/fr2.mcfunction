@@ -1,0 +1,1 @@
+$data modify storage map: top.grid.cells[$(z)][$(x)].normal_room.is_finished set value true

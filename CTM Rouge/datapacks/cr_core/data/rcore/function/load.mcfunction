@@ -27,6 +27,7 @@ scoreboard objectives add soul.bow_type dummy
 scoreboard objectives add soul.arrow_type dummy
 scoreboard objectives add soul.arrow_cd dummy
 scoreboard objectives add soul.arrow_charge_time dummy
+scoreboard objectives add soul.hpkit dummy
 scoreboard objectives add genericCD dummy
 scoreboard objectives add reciving dummy
 scoreboard objectives add input trigger
@@ -34,6 +35,7 @@ scoreboard objectives add tp.target dummy
 scoreboard objectives add tp.cd dummy
 scoreboard objectives add score dummy "分数"
 scoreboard objectives add viewing_map dummy
+scoreboard objectives add hpkit dummy
 
 team add red
 team add blue

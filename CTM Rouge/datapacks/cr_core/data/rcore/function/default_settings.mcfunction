@@ -16,3 +16,5 @@ scoreboard players set floor_2.z data 1000
 scoreboard players set diff.f0 options 100
 scoreboard players set diff.f1 options 150
 scoreboard players set diff.f2 options 200
+
+scoreboard players set stair_1.open_time options 12000

@@ -12,7 +12,7 @@ struct Cell {
     connections?: CellConnetion,
     /// Id of this room in the grid of the current floor
     rid?: int,
-    /// Universal id of this room across all floors and all games
+    /// Universal id of this room across all floors
     urid?: int,
     normal_room?: struct{
         /// Is finished by players
@@ -64,6 +64,7 @@ struct stair_room{
     z?: int,
     to_floor?: int,
     needs_key?: boolean,
+    f0_time_lock?: true,
 }
 
 struct SpawnPoints{

@@ -1,7 +1,6 @@
 data modify storage team: data set value []
 clear @a
 effect clear @a
-time set 13000
 effect give @a instant_health 1 100 true
 effect give @a saturation 5 10 true
 effect give @a resistance 10 10 true
