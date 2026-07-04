@@ -1,0 +1,2 @@
+execute as @a at @s run playsound crouge:ui.warning master @s ~ ~ ~ 1 1 1
+tellraw @a [{text:"[!] 时间已过一分钟，",color:"red"},{entity:"@s",nbt:'Item.components."minecraft:item_name"',interpret: true},"可以被任何玩家拾取了！"]

@@ -15,5 +15,7 @@ execute as @e[type=item,tag=!legal_drop] if items entity @s contents *[custom_da
 #Game on
 execute unless score game data matches 1.. run return fail
 scoreboard players add time data 1
+
 execute if score time data = stair_1.open_time options run function rcore:stream/game/stair_1_open/stair_1_open
 execute if score time data > GameLength options run function rcore:stream/end/end
+execute as @e[type=item,tag=wool.entity] at @s run function rcore:core/wool/exe

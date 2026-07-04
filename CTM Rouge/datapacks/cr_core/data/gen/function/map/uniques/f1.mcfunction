@@ -1,0 +1,1 @@
+function gen:map/uniques/f1/light_blue_wool

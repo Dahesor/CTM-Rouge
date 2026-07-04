@@ -48,6 +48,15 @@
             "chars": [
                 "0"
             ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 16,
+            "height": 18,
+            "file":"crouge:font/player/wool.png",
+            "chars": [
+                "w"
+            ]
         }
     ]
 }

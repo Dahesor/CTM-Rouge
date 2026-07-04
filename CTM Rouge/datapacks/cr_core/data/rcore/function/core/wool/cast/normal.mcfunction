@@ -1,0 +1,9 @@
+execute if score @s interaction matches ..3 run return run execute as @a[distance=..3,scores={join_game=1..,team=1..},gamemode=!spectator,tag=!has_wool] run tag @s add range_wool
+execute if score @s interaction matches ..5 run return run execute as @a[distance=..5,scores={join_game=1..,team=1..},gamemode=!spectator,tag=!has_wool] run tag @s add range_wool
+execute if score @s interaction matches ..7 run return run execute as @a[distance=..7,scores={join_game=1..,team=1..},gamemode=!spectator,tag=!has_wool] run tag @s add range_wool
+execute if score @s interaction matches ..12 run return run execute as @a[distance=..12,scores={join_game=1..,team=1..},gamemode=!spectator,tag=!has_wool] run tag @s add range_wool
+execute if score @s interaction matches ..16 run return run execute as @a[distance=..16,scores={join_game=1..,team=1..},gamemode=!spectator,tag=!has_wool] run tag @s add range_wool
+execute if score @s interaction matches ..24 run return run execute as @a[distance=..24,scores={join_game=1..,team=1..},gamemode=!spectator,tag=!has_wool] run tag @s add range_wool
+execute if score @s interaction matches ..36 run return run execute as @a[distance=..36,scores={join_game=1..,team=1..},gamemode=!spectator,tag=!has_wool] run tag @s add range_wool
+execute if score @s interaction matches ..50 run return run execute as @a[distance=..50,scores={join_game=1..,team=1..},gamemode=!spectator,tag=!has_wool] run tag @s add range_wool
+execute if score @s interaction matches ..80 run return run execute as @a[distance=..80,scores={join_game=1..,team=1..},gamemode=!spectator,tag=!has_wool] run tag @s add range_wool

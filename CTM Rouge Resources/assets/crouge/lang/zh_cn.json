@@ -148,7 +148,13 @@
   "item.advanced_hpkit.3": "受到伤害会中断恢复",
   "item.advanced_hpkit.4": "§a预热时间：2s",
   "item.advanced_hpkit.5": "§a恢复间隔：1s",
-  "actionbar.in_stairs.down":"楼梯间：可前往上一层",
-  "actionbar.in_stairs.up":"楼梯间：可前往下一层",
-  "actionbar.in_stairs.up.locked":"楼梯间锁定：游戏开始十分钟后解锁"
+  "actionbar.in_stairs.down": "楼梯间：可前往上一层",
+  "actionbar.in_stairs.up": "楼梯间：可前往下一层",
+  "actionbar.in_stairs.up.locked": "楼梯间锁定：游戏开始十分钟后解锁",
+  "item.light_blue_wool": "淡蓝色羊毛",
+  "item.light_blue_wool.1": "§6收藏品",
+  "item.light_blue_wool.2": "蕴含着古老的时空力量",
+  "item.light_blue_wool.3": "那力量像是在向你招手",
+  "item.light_blue_wool.4": "§a带回出生点获取120分",
+  "actionbar.wool_pickup": "> 长按%s拾取羊毛 <"
 }

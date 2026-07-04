@@ -19,7 +19,7 @@ dispatch mcdoc:custom_data["hpkit"] to struct {
     interval?: int,
 }
 
-type ItemClass = ("hpkit")
+type ItemClass = ("hpkit"|"wool")
 
 dispatch mcdoc:custom_data["inStock"] to struct shopStock {
     item?: RegistryItem,

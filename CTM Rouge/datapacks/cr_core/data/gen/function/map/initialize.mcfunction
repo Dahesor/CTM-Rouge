@@ -25,6 +25,8 @@ function gen:map/stairs/cases
 # Place Teleporters
 function gen:map/tp/master
 
-
 # Place Shops
 function gen:map/shop/master
+
+# Place special rooms
+function gen:map/uniques/distribute

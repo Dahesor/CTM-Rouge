@@ -1,0 +1,1 @@
+$data modify storage map: construct.grid.cells[$(z)][$(x)] set from storage ram: map_cell

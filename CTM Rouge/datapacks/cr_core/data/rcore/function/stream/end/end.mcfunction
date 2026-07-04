@@ -9,3 +9,5 @@ execute as @a at @s run playsound ui.toast.challenge_complete master @s ~ ~ ~ 1 
 title @a times 10 20 10
 title @a title "时间到！"
 gamemode adventure @a
+tag @a remove has_wool
+tag @a remove in_room

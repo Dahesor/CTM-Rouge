@@ -56,7 +56,8 @@ enum(string) CellTypes{
 }
 
 enum(string) SpecialTypes{
-    f1secrs = "f1_secrect_exit"
+    f1secrs = "f1_secrect_exit",
+    light_blue_wool = "light_blue_wool",
 }
 
 struct stair_room{

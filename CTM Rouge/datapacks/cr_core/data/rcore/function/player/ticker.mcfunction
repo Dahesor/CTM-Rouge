@@ -17,5 +17,6 @@ execute if score @s revive_cd matches 1.. run function rcore:player/death/cd
 execute if entity @s[tag=in_stairs,gamemode=!spectator] run function rcore:core/stairs/move/check
 function rcore:player/utils/location/get_pos
 function rcore:player/use/bow
+execute if entity @s[tag=range_wool] run function rcore:core/wool/player
 execute if score #loop_5 calculator.cr matches 4 unless entity @s[gamemode=spectator] run function rcore:player/utils/soul_bind/main
 execute unless score @s hpkit matches 0 run function rcore:player/use/hpkit/tick_run
