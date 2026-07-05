@@ -33,7 +33,6 @@ scoreboard objectives add reciving dummy
 scoreboard objectives add input trigger
 scoreboard objectives add tp.target dummy
 scoreboard objectives add tp.cd dummy
-scoreboard objectives add score dummy "分数"
 scoreboard objectives add viewing_map dummy
 scoreboard objectives add hpkit dummy
 scoreboard objectives add wool.sneak dummy
@@ -83,6 +82,7 @@ scoreboard players set #20 calculator.cr 20
 scoreboard players set #50 calculator.cr 50
 scoreboard players set #100 calculator.cr 100
 scoreboard players set #360 calculator.cr 360
+scoreboard players set #1200 calculator.cr 1200
 
 
 data modify storage ram: i set value {i:0}

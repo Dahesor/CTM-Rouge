@@ -26,6 +26,9 @@ scoreboard players operation #x calculator.cr += #temp calculator.cr
 execute if score #x calculator.cr >= floor.side_length options run return fail
 execute if score #z calculator.cr >= floor.side_length options run return fail
 
+# Check if we discard this room
+execute if function gen:map/random_spread/check_discard run return fail
+
 # Now check if the location is already taken
 data modify storage run: i set value {x:0,z:0}
 execute store result storage run: i.x int 1 run scoreboard players get #x calculator.cr

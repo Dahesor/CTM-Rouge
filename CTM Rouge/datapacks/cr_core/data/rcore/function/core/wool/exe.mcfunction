@@ -1,3 +1,5 @@
+execute if entity @s[tag=wool.locked] run return run function rcore:core/wool/lock/unlock
+
 execute if entity @s[tag=!wool.idle] run function rcore:core/wool/dropped
 
 execute unless score @s interaction matches 3.. run scoreboard players set @s interaction 3

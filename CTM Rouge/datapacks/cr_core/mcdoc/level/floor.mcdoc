@@ -17,4 +17,5 @@ dispatch minecraft:storage["map:"] to struct{
     top?: Floor,
     construct?: Floor,
     stairs?: [Cell],
+    wools?: [Cell],
 }

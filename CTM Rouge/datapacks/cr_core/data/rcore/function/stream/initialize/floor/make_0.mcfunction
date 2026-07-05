@@ -9,6 +9,12 @@ scoreboard players set floor.level options 0
 
 data modify storage ram: stair_list set value []
 data modify storage map: stairs set value []
+data modify storage map: wools set value []
 
-tellraw @a {text:"[DEBUG] Generating floor 1",color:"dark_gray"}
+bossbar set rcore:init/master value 40
+bossbar set rcore:init/sub name {text:"生成第一层……",color:"green"}
+execute store result bossbar rcore:init/sub max run scoreboard players get floor.room_count options
+scoreboard players set #subvalue calculator.cr 0
+
+
 function gen:new

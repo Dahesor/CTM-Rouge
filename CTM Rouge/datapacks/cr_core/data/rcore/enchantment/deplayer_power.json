@@ -32,6 +32,22 @@
                         "predicate": {
                             "entity_type": "player"
                         }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "head": {
+                                        "predicates": {
+                                            "custom_data": {"item": {"class": "wool"}}
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 ]
             },
@@ -57,6 +73,22 @@
                         "entity": "this",
                         "predicate": {
                             "entity_type": "player"
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "equipment": {
+                                    "head": {
+                                        "predicates": {
+                                            "custom_data": {"item": {"class": "wool"}}
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 ]

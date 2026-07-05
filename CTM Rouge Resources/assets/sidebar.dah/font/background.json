@@ -1,0 +1,17 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "sidebar.dah:space"
+        },
+        {
+            "type": "bitmap",
+            "file": "sidebar.dah:gui/default_background.png",
+            "height": 170,
+            "ascent": 0,
+            "chars": [
+                "a"
+            ]
+        }
+    ]
+}

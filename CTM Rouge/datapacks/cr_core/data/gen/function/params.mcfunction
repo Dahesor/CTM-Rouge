@@ -6,13 +6,15 @@ scoreboard players set SPAWNER_COUNT_INC_THRESHOLD options 40
 
 # ================= Structure Params ===============
 scoreboard players set room.tp.margin options 1
-scoreboard players set room.tp.spacing options 4
+scoreboard players set room.tp.discard options 50
+scoreboard players set room.tp.spacing options 3
 scoreboard players set room.shop.margin options 1
-scoreboard players set room.shop.spacing options 4
+scoreboard players set room.shop.spacing options 3
+scoreboard players set room.shop.discard options 50
 
 # ================= Input Params =================
 scoreboard players set cell.connectivity options 30
-scoreboard players set floor.side_length options 8
+scoreboard players set floor.side_length options 10
 scoreboard players set mob.identity_min_time options 200
 scoreboard players set mob.identity_max_time options 600
 scoreboard players set mob.identity_spawn_count options 2

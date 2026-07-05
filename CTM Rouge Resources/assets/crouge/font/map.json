@@ -212,6 +212,24 @@
                 "O"
             ]
         },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/wool.png",
+            "chars": [
+                "w"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
+            "file":"crouge:font/map/wool_empty.png",
+            "chars": [
+                "k"
+            ]
+        },
 
 
 

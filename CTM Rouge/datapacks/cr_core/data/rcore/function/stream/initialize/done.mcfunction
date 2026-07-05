@@ -1,3 +1,6 @@
+bossbar remove rcore:init/master
+bossbar remove rcore:init/sub
+
 data modify storage ram: emptyPlMap set value {ground:{grid:{cells:[],side_length:1},compiled:[]},upper:{grid:{cells:[],side_length:1},compiled:[]},top:{grid:{cells:[],side_length:1},compiled:[]}}
 
 execute store result storage ram: emptyPlMap.ground.grid.side_length int 1 run scoreboard players get floor.side_length options
@@ -22,5 +25,6 @@ scoreboard players operation #trigger_2 calculator.cr += floor.room_count option
 scoreboard players operation #trigger_2 calculator.cr += floor.room_count options
 function rcore:stream/initialize/player_map/make_z
 
-say init done
+tellraw @a {text:"游戏开始",color:"green"}
+
 function rcore:stream/start/start

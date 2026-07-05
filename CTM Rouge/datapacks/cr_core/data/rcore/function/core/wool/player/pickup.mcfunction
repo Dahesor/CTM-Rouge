@@ -14,6 +14,8 @@ scoreboard players operation $this team = @s team
 execute as @a if score @s team = $this team at @s run playsound crouge:tp.captured master @s ~ ~ ~ 1 0.95 1
 execute as @a[scores={join_game=1..}] unless score @s team = $this team at @s run playsound crouge:ui.warning master @s ~ ~ ~ 1 1 1
 execute as @a[scores={join_game=0}] at @s run playsound crouge:tp.captured master @s ~ ~ ~ 1 1 1
+data modify storage run: id set from storage ram: item.components."minecraft:custom_data".item.id
+function rcore:core/wool/player/change_score
 
 ## Broadcast
     data modify storage ram: item set from entity 0-0-0-0-0 Items[{Slot:0b}]

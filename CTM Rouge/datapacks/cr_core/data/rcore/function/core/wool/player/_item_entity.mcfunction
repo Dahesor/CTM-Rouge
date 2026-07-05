@@ -10,3 +10,4 @@ function rcore:team/map/render/player/calc_pixel_coords
 scoreboard players operation @s map_x = $this map_x
 scoreboard players operation @s map_z = $this map_z
 scoreboard players operation @s map_font = $this map_font
+data modify entity @s Glowing set value 1b

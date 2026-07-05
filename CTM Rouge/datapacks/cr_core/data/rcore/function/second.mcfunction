@@ -7,11 +7,8 @@ execute as @e[type=marker,tag=pre.game_clear,tag=cr.spawner] at @s unless block 
 
 #Game on
 execute unless score game data matches 1.. run return fail
+function rcore:menu/sidebar/second
 execute as @e[type=marker,tag=cr.spawner,tag=game_clear] at @s run function rcore:core/spawner/check_tick
 execute as @e[type=interaction,tag=cr.shop_interact.fill,tag=game_clear] at @s run function rcore:shop/second
 execute as @e[type=marker,tag=cr.tp_room] at @s run function rcore:core/capture/marker
-
-scoreboard players operation §cred score = score.red data
-scoreboard players operation §bblue score = score.blue data
-scoreboard players operation §eyellow score = score.yellow data
-scoreboard players operation §agreen score = score.green data
+execute as @e[type=iron_golem,tag=boss_wool,tag=boss.iron_golem] at @s run function rcore:ai/golem/second

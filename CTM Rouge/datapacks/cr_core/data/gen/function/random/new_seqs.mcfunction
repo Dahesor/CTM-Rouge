@@ -18,3 +18,4 @@ $random reset gen:loot_drop $(seed) false true
 $random reset gen:loot_rarity $(seed) false true
 $random reset gen:stair_location $(seed) false true
 $random reset gen:unique_location $(seed) false true
+$random reset gen:room_discard $(seed) false true
