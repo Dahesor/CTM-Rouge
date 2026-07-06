@@ -1,4 +1,6 @@
 scoreboard players operation $this room = @s room
+scoreboard players operation $this floor = $this room
+scoreboard players operation $this floor /= floor.room_count options
 
 execute as @e[type=interaction,distance=..100,tag=cr.shop_interact.normal] if score @s room = $this room at @s run function rcore:shop/stock/regular
 execute as @e[type=interaction,distance=..100,tag=cr.shop_interact.rare] if score @s room = $this room at @s run function rcore:shop/stock/rare

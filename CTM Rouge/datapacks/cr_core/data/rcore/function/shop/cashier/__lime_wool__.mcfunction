@@ -1,0 +1,2 @@
+execute if data storage reg:item this.stack.components."minecraft:custom_data".item{id:"lime_wool"} run return run function rcore:core/wool/player/special/lime_shopped
+function reg:item/get/give/single_this

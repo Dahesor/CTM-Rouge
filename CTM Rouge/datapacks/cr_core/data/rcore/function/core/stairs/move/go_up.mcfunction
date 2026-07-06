@@ -27,5 +27,6 @@ tag @s remove in_stairs
 tag @s remove in_stairs.down
 tag @s remove in_stairs.up
 tag @s remove in_stairs.0secrect
+tag @s remove in_stairs.1oneway
 function rcore:core/stairs/move/__climb with storage run: i
 effect give @s slow_falling 3 1

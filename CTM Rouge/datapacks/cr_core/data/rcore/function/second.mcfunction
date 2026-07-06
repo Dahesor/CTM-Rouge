@@ -11,4 +11,6 @@ function rcore:menu/sidebar/second
 execute as @e[type=marker,tag=cr.spawner,tag=game_clear] at @s run function rcore:core/spawner/check_tick
 execute as @e[type=interaction,tag=cr.shop_interact.fill,tag=game_clear] at @s run function rcore:shop/second
 execute as @e[type=marker,tag=cr.tp_room] at @s run function rcore:core/capture/marker
+bossbar set rcore:boss/iron_golem players @a[tag=empty_set]
 execute as @e[type=iron_golem,tag=boss_wool,tag=boss.iron_golem] at @s run function rcore:ai/golem/second
+execute as @e[type=marker,tag=light_gray_wool.hidden] at @s run function rcore:ai/miner/second

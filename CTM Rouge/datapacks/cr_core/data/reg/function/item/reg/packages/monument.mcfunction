@@ -2,3 +2,7 @@ function reg:item/monument/terra_restore
 function reg:item/key/f1_secret_key
 function reg:item/monument/light_blue_wool
 function reg:item/monument/white_wool
+function reg:item/monument/lime_wool
+function reg:item/monument/pink_wool
+function reg:item/monument/light_gray_wool
+function reg:item/monument/green

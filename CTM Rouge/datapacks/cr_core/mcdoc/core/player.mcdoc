@@ -1,12 +1,21 @@
+use ::java::world::item::ItemStack
+use ::java::util::slot::SlottedItem
+use ::java::world::entity::mob::player::PlayerEquipment
+
 dispatch minecraft:storage["core:player"] to struct {
     data?: [Player],
     "_UID_GET"?: struct{
         UID?: int,
     },
+    itemStack?: SlottedItem<byte @ 0..36>,
 }
 
 struct Player{
     UID?: int,
     Name?: string,
     tp_target?: int,
+    backpack?: struct{
+        equipment?: PlayerEquipment,
+        inv?: [SlottedItem<byte @ 0..36>] @ 0..36,
+    }
 }

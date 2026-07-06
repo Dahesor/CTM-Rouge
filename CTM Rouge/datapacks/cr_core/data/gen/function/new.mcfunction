@@ -21,6 +21,7 @@ function gen:disjoint/open/open
 
 # Special cases
 function gen:map/stairs/f0/transform_test
+function gen:map/uniques/f0/one_way_fall
 
 # Place structures
 function gen:place/init

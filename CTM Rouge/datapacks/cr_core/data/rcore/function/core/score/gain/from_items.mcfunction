@@ -4,3 +4,6 @@ execute if score #count calculator.cr matches 1.. run function rcore:core/score/
 
 execute if items entity @s armor.head *[custom_data~{item:{id:"light_blue_wool"}}] run function rcore:core/score/gain/light_blue
 execute if items entity @s armor.head *[custom_data~{item:{id:"white_wool"}}] run function rcore:core/score/gain/white
+execute if items entity @s armor.head *[custom_data~{item:{id:"lime_wool"}}] run function rcore:core/score/gain/lime
+execute if items entity @s armor.head *[custom_data~{item:{id:"pink_wool"}}] run function rcore:core/score/gain/pink
+execute if items entity @s armor.head *[custom_data~{item:{id:"green_wool"}}] run function rcore:core/score/gain/green

@@ -1,0 +1,1 @@
+$execute rotated $(i) 0 positioned ^ ^ ^0.5 run function rcore:ai/slime/scatter/motion

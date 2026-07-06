@@ -2,7 +2,7 @@ data modify storage run: idgen set value {count:0,id:"apple",result:""}
 data modify storage run: idgen.id set from storage reg:item new.id
 function reg:item/reg/__gen_title with storage run: idgen
 
-data modify storage reg:item new.stack.components merge value {"minecraft:unbreakable":{},can_break:[{blocks:"spawner"}]}
+data modify storage reg:item new.stack.components merge value {"minecraft:unbreakable":{},can_break:[{blocks:["spawner","sculk_vein","dead_bubble_coral_block"]}]}
 
 data modify storage run: hidden set value ["minecraft:unbreakable","minecraft:can_break","minecraft:dyed_color"]
 data modify storage reg:item new.stack.components."minecraft:tooltip_display".hidden_components append from storage run: hidden[]

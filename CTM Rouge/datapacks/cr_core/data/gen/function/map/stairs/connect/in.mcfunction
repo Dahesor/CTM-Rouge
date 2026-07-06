@@ -3,6 +3,9 @@ data modify storage ram: stack[0].map_cell set from storage ram: stair_list[0]
 
 function gen:map/stairs/connect/__get_original with storage ram: stack[0].map_cell.meta
 
+#1->0 one way
+execute if data storage ram: stack[0].map_cell{special:"f0_fall_exit"} run return run function gen:map/stairs/connect/1_0_oneway
+
 data modify storage ram: map_cell merge value {type:"stairs",connections:{pos_z:false,pos_x:false,neg_z:false,neg_x:false,floor_down:true},stair_room:{needs_key:false,to_floor:0,x:0,z:0}}
 
 # stair_room

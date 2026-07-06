@@ -1,0 +1,23 @@
+function reg:item/get/prepare
+item replace entity @s armor.head from entity 0-0-0-0-0 container.0
+tag @s add has_wool
+
+playsound entity.player.levelup master @s ~ ~ ~ 1 1.1 1
+scoreboard players operation $this team = @s team
+execute as @a if score @s team = $this team at @s run playsound crouge:tp.captured master @s ~ ~ ~ 1 0.95 1
+execute as @a[scores={join_game=1..}] unless score @s team = $this team at @s run playsound crouge:ui.warning master @s ~ ~ ~ 1 1 1
+execute as @a[scores={join_game=0}] at @s run playsound crouge:tp.captured master @s ~ ~ ~ 1 1 1
+data modify storage run: id set from storage ram: item.components."minecraft:custom_data".item.id
+function rcore:core/wool/player/change_score
+
+## Broadcast
+    data modify storage ram: item set from entity 0-0-0-0-0 Items[{Slot:0b}]
+
+    tellraw @a [{text:"[!] ",color:"red"},{selector:"@s"},"捡起了",{storage:"ram:",nbt:'item.components."minecraft:item_name"',color:"yellow",interpret:true},"，其所在房间已在地图上暴露！"]
+
+    data modify storage ram: broadcast set value {}
+    data modify storage ram: broadcast.self set value [{text:"[✔] 您捡起了",color:"green"},{storage:"ram:",nbt:'item.components."minecraft:item_name"',color:"yellow",interpret:true},"，快把它运回基地吧！"]
+
+    data modify storage ram: broadcast.teammate set value [{text:"[✔] ",color:"green"},{selector:"@a[tag=__this]"},"捡起了",{storage:"ram:",nbt:'item.components."minecraft:item_name"',color:"yellow",interpret:true},"，保护好这位队友！"]
+    function rcore:core/tellraw/normal
+## Broadcast

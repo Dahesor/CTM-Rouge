@@ -7,6 +7,10 @@ scoreboard players set secrect.f0.stof1 data 0
 scoreboard players set light_blue_wool.taken data 0
 scoreboard players set yellow_wool.taken data 0
 scoreboard players set white_wool.taken data 0
+scoreboard players set pink_wool.taken data 0
+scoreboard players set lime_wool.taken data 0
+scoreboard players set light_gray_wool.taken data 0
+scoreboard players set green_wool.taken data 0
 scoreboard players reset @a soul.bow_type
 scoreboard players reset @a soul.arrow_type
 scoreboard players reset @a soul.hpkit

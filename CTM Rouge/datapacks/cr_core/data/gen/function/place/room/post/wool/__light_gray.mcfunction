@@ -1,0 +1,1 @@
+$execute positioned ~$(x) ~$(y) ~$(z) run tp @n[distance=..200,type=marker,tag=light_gray_wool.hidden] ~ ~ ~

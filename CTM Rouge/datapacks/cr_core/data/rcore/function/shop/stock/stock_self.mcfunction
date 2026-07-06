@@ -1,4 +1,6 @@
 tag @s remove __shop_uninitialized
+execute if entity @s[tag=shop.has_lime_wool] if data entity @s data.inStock{has_stock:true} run scoreboard players set lime_wool.taken data 0
+tag @s remove shop.has_lime_wool
 function rcore:shop/cashier/post_purchase
 function rcore:shop/stock/to_this
 
@@ -6,6 +8,9 @@ execute store result score #rand calculator.cr run random value 0..99999999 gen:
 execute store result score #max calculator.cr run data get storage reg:shop_pool this
 execute store result storage ram: i.i int 1 run scoreboard players operation #rand calculator.cr %= #max calculator.cr
 function rcore:shop/stock/__get_item with storage ram: i
+
+execute if data storage reg:item this.stack.components."minecraft:custom_data".item{id:"lime_wool"} run tag @s add shop.has_lime_wool
+execute if entity @s[tag=shop.has_lime_wool] run scoreboard players set lime_wool.taken data -1
 
 data modify entity @s data.inStock.item set from storage reg:item this
 data modify entity @s data.inStock.has_stock set value true

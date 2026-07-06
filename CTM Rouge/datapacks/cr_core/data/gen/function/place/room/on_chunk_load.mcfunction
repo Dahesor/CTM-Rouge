@@ -26,6 +26,8 @@ execute if data storage ram: map_cell{type:"teleporter"} run function gen:place/
 execute if data storage ram: map_cell{type:"shop"} run function gen:place/room/post/shop/prep
 execute if data storage ram: map_cell{special:"light_blue_wool"} positioned ~15.5 ~42 ~15.5 run function gen:place/room/post/wool/light_blue
 execute if data storage ram: map_cell{special:"white_wool"} positioned ~15.5 ~39 ~15.5 run function gen:place/room/post/wool/white
+execute if data storage ram: map_cell{special:"light_gray_wool"} positioned ~10 ~2 ~10 run function gen:place/room/post/wool/light_gray
+execute if data storage ram: map_cell{special:"green_wool"} positioned ~15.5 ~6 ~15.5 run function gen:place/room/post/wool/green
 
 execute if data storage run: rm{pos_z:true} run function gen:place/room/path/up
 execute if data storage run: rm{pos_x:true} run function gen:place/room/path/left

@@ -1,5 +1,6 @@
 scoreboard players set game data 0
 scoreboard players set time data 0
+scoreboard players set @a revive_cd 0
 clear @a
 time set day
 tp @a -93 5 -93
@@ -17,3 +18,6 @@ execute store result storage ram: i.i int 1 run scoreboard players get seed data
 data modify storage ram: text[1].insertion set string storage ram: i.i
 data modify storage ram: text[1].click_event.value set string storage ram: i.i
 tellraw @a {storage:"ram:",nbt:"text",interpret:true}
+
+bossbar remove rcore:boss/iron_golem
+bossbar remove rcore:boss/slime_king

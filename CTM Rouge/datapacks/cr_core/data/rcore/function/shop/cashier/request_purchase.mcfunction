@@ -15,6 +15,7 @@ execute unless function rcore:shop/cashier/check_enough run return run function 
 
 function rcore:shop/cashier/_deduce
 data modify storage reg:item this set from storage ram: shopStock.item
-function reg:item/get/give/single_this
+
+function rcore:shop/cashier/__lime_wool__
 
 execute as @n[distance=..100,tag=cr.shop_interact,tag=__target_shop,type=interaction] at @s run function rcore:shop/cashier/post_purchase

@@ -27,6 +27,7 @@ scoreboard players reset * revive_cd
 scoreboard players set game data 1
 scoreboard players set time data 0
 scoreboard players set @a viewing_map 0
+scoreboard players set @a revive_cd 0
 scoreboard players set @a[scores={join_game=1..}] room -1
 execute as @a[scores={join_game=1..}] run function rcore:math/mapping/team--score
 

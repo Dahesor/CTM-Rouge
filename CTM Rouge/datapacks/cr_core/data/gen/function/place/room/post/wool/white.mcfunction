@@ -15,5 +15,5 @@ bossbar set rcore:boss/iron_golem max 300
 bossbar set rcore:boss/iron_golem value 300
 bossbar set rcore:boss/iron_golem visible true
 bossbar set rcore:boss/iron_golem color red
-bossbar set rcore:boss/iron_golem style notched_20
+bossbar set rcore:boss/iron_golem style notched_10
 bossbar set rcore:boss/iron_golem players @a[tag=empty_set]

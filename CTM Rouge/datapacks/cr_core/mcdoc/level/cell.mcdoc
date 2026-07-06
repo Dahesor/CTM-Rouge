@@ -59,6 +59,9 @@ enum(string) SpecialTypes{
     f1secrs = "f1_secrect_exit",
     light_blue_wool = "light_blue_wool",
     white_wool = "white_wool",
+    light_gray_wool = "light_gray_wool",
+    green_wool = "green_wool",
+    f0secrs = "f0_fall_exit",
 }
 
 struct stair_room{
@@ -66,7 +69,8 @@ struct stair_room{
     z?: int,
     to_floor?: int,
     needs_key?: boolean,
-    f0_time_lock?: true,
+    f0_time_lock?: boolean,
+    "1_0_one_way"?: boolean,
 }
 
 struct SpawnPoints{
