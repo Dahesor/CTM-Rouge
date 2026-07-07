@@ -9,6 +9,8 @@ execute unless entity @s[tag=initialized] run function rcore:ai/slime/calc_home
 scoreboard players add @s genericCD 1
 
 # Logics
+execute if predicate {condition:"location_check",predicate:{position:{y:{min:45}}}} run function rcore:ai/slime/scatter/force_tp
+
 execute if score #loop_5 calculator.cr matches 0 if score @s interaction matches 1.. run function rcore:ai/slime/scatter/pop
 execute if score #loop_5 calculator.cr matches 3 if score @s interaction matches 1.. run function rcore:ai/slime/scatter/pop
 

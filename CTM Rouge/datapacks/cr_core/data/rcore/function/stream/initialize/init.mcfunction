@@ -11,6 +11,9 @@ scoreboard players set pink_wool.taken data 0
 scoreboard players set lime_wool.taken data 0
 scoreboard players set light_gray_wool.taken data 0
 scoreboard players set green_wool.taken data 0
+scoreboard players set black_wool.taken data 0
+scoreboard players set magenta_wool.taken data 0
+scoreboard players set yellow_wool.taken data 0
 scoreboard players reset @a soul.bow_type
 scoreboard players reset @a soul.arrow_type
 scoreboard players reset @a soul.hpkit

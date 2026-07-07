@@ -62,6 +62,9 @@ enum(string) SpecialTypes{
     light_gray_wool = "light_gray_wool",
     green_wool = "green_wool",
     f0secrs = "f0_fall_exit",
+    yellow_wool = "yellow_wool",
+    magenta_wool = "magenta_wool",
+    black_wool = "black_wool",
 }
 
 struct stair_room{

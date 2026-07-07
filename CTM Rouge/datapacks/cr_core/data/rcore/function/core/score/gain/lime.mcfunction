@@ -7,7 +7,7 @@ scoreboard players operation $this team = @s team
 
     data modify storage ram: broadcast.teammate set value [{text:"[✔] ",color:"green"},{selector:"@a[tag=__this]"},"带回了",{translate:"item.lime_wool"},"，队伍分增加",{score:{name:"wool.lime.score",objective:"const"},color:"yellow"}]
 
-    data modify storage ram: broadcast.spectator set value [{text:"[!] ",color:"lime"},{selector:"@a[tag=__this]"},"带回了",{translate:"item.lime_wool"},"，队伍分增加",{score:{name:"wool.lime.score",objective:"const"},color:"yellow"}]
+    data modify storage ram: broadcast.spectator set value [{text:"[!] ",color:"green"},{selector:"@a[tag=__this]"},"带回了",{translate:"item.lime_wool"},"，队伍分增加",{score:{name:"wool.lime.score",objective:"const"},color:"yellow"}]
 
     data modify storage ram: broadcast.enemy set value [{text:"[!] ",color:"red"},{selector:"@a[tag=__this]"},"带回了",{translate:"item.lime_wool"},"，队伍分增加",{score:{name:"wool.lime.score",objective:"const"},color:"yellow"}]
 

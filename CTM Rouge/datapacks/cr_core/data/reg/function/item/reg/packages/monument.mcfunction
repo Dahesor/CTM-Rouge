@@ -6,3 +6,6 @@ function reg:item/monument/lime_wool
 function reg:item/monument/pink_wool
 function reg:item/monument/light_gray_wool
 function reg:item/monument/green
+function reg:item/monument/yellow
+function reg:item/monument/magenta
+function reg:item/monument/black

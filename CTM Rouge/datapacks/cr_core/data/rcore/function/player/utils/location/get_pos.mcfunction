@@ -6,6 +6,7 @@ scoreboard players operation @s rot_xz = $this rot_xz
 tag @s add in_room
 
 execute store result score @s floor run function rcore:player/utils/_get_floor
+execute if entity @s[tag=has_wool] if items entity @s armor.head *[custom_data~{item:{id:"magenta_wool"}}] run function rcore:player/utils/misc/magenta_tag
 
 execute if score @s floor matches 0 run scoreboard players operation $this pos_x -= floor_0.x data
 execute if score @s floor matches 0 run scoreboard players operation $this pos_z -= floor_0.z data
