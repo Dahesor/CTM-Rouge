@@ -3,7 +3,7 @@ function reg:item/get/model/wool
 
 execute summon item_display run function gen:place/room/post/wool/_mount_wool
 
-summon warden ~ ~ ~ {Tags:["game_clear","boss_wool","boss.warden"],PersistenceRequired:true,Brain:{memories:{"minecraft:dig_cooldown":{value: {}, ttl: 12000000000L}}}}
+summon warden ~ ~ ~ {Tags:["game_clear","boss_wool","boss.warden"],PersistenceRequired:true,Brain:{memories:{"minecraft:dig_cooldown":{value: {}, ttl: 12000000000L}}},attributes:[{base:20d,id:"attack_damage"}]}
 
 ride @n[tag=wool.mount] mount @n[type=warden,tag=boss_wool,tag=boss.warden]
 execute as @n[type=warden,tag=boss_wool,tag=boss.warden] on passengers on passengers run tag @s add wool.locked

@@ -1,3 +1,6 @@
+execute unless score floor.level options matches 0 run return 1
+
+
 ## Randomly select a room
 # we might generalize this later to be a function
 data modify storage ram: map set value []

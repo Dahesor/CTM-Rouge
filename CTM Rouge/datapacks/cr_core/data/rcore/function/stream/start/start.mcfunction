@@ -35,7 +35,7 @@ execute as @a[scores={join_game=1..}] run function rcore:math/mapping/team--scor
 
 function rcore:stream/start/spawn_point/spawn_players
 
-function rcore:stream/start/gears/helmets
+function rcore:stream/start/gears/helmet_all
 function rcore:stream/start/gears/boots
 schedule function rcore:stream/start/gears/_startup 1s
 execute as @a[scores={join_game=1..}] at @s run function rcore:player/utils/saddle_item

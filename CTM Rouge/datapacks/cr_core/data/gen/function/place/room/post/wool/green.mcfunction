@@ -3,7 +3,7 @@ function reg:item/get/model/wool
 
 execute summon item_display run function gen:place/room/post/wool/_mount_wool
 
-summon slime ~ ~ ~ {Tags:["boss_wool","game_clear","boss.slime_king"],Size:25,attributes:[{base:1024d,id:"max_health"},{base:8d,id:"jump_strength"},{base:30d,id:"safe_fall_distance"},{base:1.0d,id:"knockback_resistance"}],CustomName:{text:"\"史莱姆王\"",color:"green"},Health:1024f,PersistenceRequired:true}
+summon slime ~ ~ ~ {Tags:["boss_wool","game_clear","boss.slime_king"],Size:25,attributes:[{base:1024d,id:"max_health"},{base:8d,id:"jump_strength"},{base:30d,id:"safe_fall_distance"},{base:1.0d,id:"knockback_resistance"},{base:18d,id:"attack_damage"}],CustomName:{text:"\"史莱姆王\"",color:"green"},Health:1024f,PersistenceRequired:true}
 
 
 ride @n[tag=wool.mount] mount @n[type=slime,tag=boss_wool,tag=boss.slime_king]
