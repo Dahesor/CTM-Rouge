@@ -17,6 +17,7 @@ execute unless score game data matches 1.. run return fail
 scoreboard players add time data 1
 
 execute if score time data = stair_1.open_time options run function rcore:stream/game/stair_1_open/stair_1_open
+execute if score time data = stair_2.open_time options run function rcore:stream/game/stair_2_open/stair_2_open
 execute if score time data > GameLength options run function rcore:stream/end/end
 execute as @e[type=item,tag=wool.entity] at @s run function rcore:core/wool/exe
 execute if score #loop_5 calculator.cr matches 2 as @e[type=item,tag=floating_item] at @s run function rcore:math/track_item/self

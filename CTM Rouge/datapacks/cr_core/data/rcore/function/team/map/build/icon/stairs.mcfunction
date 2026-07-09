@@ -1,3 +1,4 @@
+execute if score $this floor matches 1 unless score stair.1_2.open data matches 1 if data storage team: cell.stair_room{to_floor:2} run return run data modify storage run: icon set value "O-"
 execute if score $this floor matches 1 if data storage team: cell.stair_room{to_floor:2} run return run data modify storage run: icon set value "I-"
 execute if score $this floor matches 2 if data storage team: cell.stair_room{to_floor:1} run return run data modify storage run: icon set value "P-"
 

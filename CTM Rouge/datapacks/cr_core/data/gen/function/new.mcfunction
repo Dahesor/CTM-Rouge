@@ -22,7 +22,7 @@ function gen:disjoint/open/open
 # Special cases
 function gen:map/stairs/f0/transform_test
 function gen:map/uniques/f0/one_way_fall
-function gen:map/uniques/f0/magenta_wool
+function gen:map/uniques/f0/magenta_or_gray
 
 # Place structures
 function gen:place/init

@@ -3,6 +3,7 @@ scoreboard players set score.green data 0
 scoreboard players set score.blue data 0
 scoreboard players set score.yellow data 0
 scoreboard players set stair.0_1.open data 0
+scoreboard players set stair.1_2.open data 0
 scoreboard players set secrect.f0.stof1 data 0
 scoreboard players set light_blue_wool.taken data 0
 scoreboard players set yellow_wool.taken data 0
@@ -14,6 +15,7 @@ scoreboard players set green_wool.taken data 0
 scoreboard players set black_wool.taken data 0
 scoreboard players set magenta_wool.taken data 0
 scoreboard players set yellow_wool.taken data 0
+scoreboard players set gray_wool.taken data 0
 scoreboard players reset @a soul.bow_type
 scoreboard players reset @a soul.arrow_type
 scoreboard players reset @a soul.hpkit

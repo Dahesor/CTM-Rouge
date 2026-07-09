@@ -1,0 +1,1 @@
+execute in overworld run tp @s -472.5 8.5 -468.5 0 0

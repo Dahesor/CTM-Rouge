@@ -17,9 +17,11 @@ execute as @a[scores={join_game=0}] at @s run playsound crouge:tp.captured maste
 data modify storage run: id set from storage ram: item.components."minecraft:custom_data".item.id
 function rcore:core/wool/player/change_score
 
-## Broadcast
-    data modify storage ram: item set from entity 0-0-0-0-0 Items[{Slot:0b}]
+execute if items entity @s armor.head *[custom_data~{item:{id:"gray_wool"}}] run return run function rcore:core/wool/player/gray_pickup
 
+## Broadcast
+
+    data modify storage ram: item set from entity 0-0-0-0-0 Items[{Slot:0b}]
     tellraw @a [{text:"[!] ",color:"red"},{selector:"@s"},"捡起了",{storage:"ram:",nbt:'item.components."minecraft:item_name"',color:"yellow",interpret:true},"，其所在房间已在地图上暴露！"]
 
     data modify storage ram: broadcast set value {}

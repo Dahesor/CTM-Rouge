@@ -151,6 +151,7 @@
   "actionbar.in_stairs.down": "楼梯间：可前往上一层",
   "actionbar.in_stairs.up": "楼梯间：可前往下一层",
   "actionbar.in_stairs.up.locked": "楼梯间锁定：游戏开始十分钟后解锁",
+  "actionbar.in_stairs.up.locked2": "楼梯间锁定：游戏开始二十分钟后解锁",
   "item.light_blue_wool": "淡蓝色羊毛【天空】",
   "item.light_blue_wool.1": "一旦你尝试过天空的味道，",
   "item.light_blue_wool.2": "你就会永远向上仰望。",
@@ -208,5 +209,12 @@
   "item.black_wool.1": "啊，伟大的太阳啊！",
   "item.black_wool.2": "假若你不拥有你照耀的一切，",
   "item.black_wool.3": "你的光热有何意义？",
-  "item.black_wool.4": "§a带回出生点获取350分"
+  "item.black_wool.4": "§a带回出生点获取350分",
+  "item.gray_wool": "灰色羊毛【诡计】",
+  "item.gray_wool.1": "挥剑仅小技，",
+  "item.gray_wool.2": "活塞乃伟力。",
+  "item.gray_wool.3": "§6收藏品",
+  "item.gray_wool.4": "§a带回§c§l其他队伍§a的出生点得200分",
+  "item.netherite_spear": "下界合金矛",
+  "item.netherite_spear.1": "又沉又尖"
 }

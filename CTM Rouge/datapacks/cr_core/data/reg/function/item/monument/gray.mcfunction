@@ -1,0 +1,27 @@
+data modify storage reg:item new set value {\
+    id:"gray_wool",\
+    rarity:"mythic",\
+    base_price: 240,\
+    lore_line_count:4,\
+    in_shop:false,\
+    spawner_loot:false,\
+    stack:{\
+        id:"gray_wool",\
+        components:{\
+        max_stack_size:1,\
+        custom_data:{item:{class:"wool",id:"gray_wool"}},\
+        enchantments:{binding_curse:1},\
+        equippable:{\
+            slot:"head",allowed_entities:"player",equip_on_interact:false,\
+            equip_sound:"intentionally_empty",dispensable:false,can_be_sheared:false,\
+            damage_on_hurt:false,swappable:false},\
+        "minecraft:tooltip_display":{hidden_components:["enchantments"]},\
+        damage_resistant:{types:"#rcore:all"},tooltip_style:"crouge:wool/gray",\
+        item_model:"crouge:wools/gray"\
+        }\
+    }\
+}
+
+scoreboard players set wool.gray.score const 200
+
+function reg:item/reg/new

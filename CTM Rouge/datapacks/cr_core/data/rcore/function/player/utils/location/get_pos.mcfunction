@@ -46,7 +46,9 @@ execute if score @s room = $this room run return 1
 scoreboard players operation @s room = $this room
 scoreboard players operation $this floor = @s floor
 #> Check if player got back to spawn
-execute if function rcore:player/utils/condition/at_spawn run function rcore:core/score/gain/from_items
+execute if function rcore:player/utils/condition/at_spawn run function rcore:core/score/from_items
+#> Gray Wool: Check if went to other team's spawn
+execute if function rcore:player/utils/condition/in_other_team_spawn run function rcore:core/score/other_spawn
 function rcore:player/utils/location/stairs_check
 
 #> Check for new room discovery

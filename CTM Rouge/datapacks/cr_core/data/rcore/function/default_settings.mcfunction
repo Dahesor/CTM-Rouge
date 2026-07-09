@@ -1,7 +1,7 @@
 scoreboard players set REVIVE_COOLDOWN options 600
 scoreboard players set SCORE.TERRA_RESTORE options 10
 scoreboard players set TP.CD options 100
-scoreboard players set GameLength options 36000
+scoreboard players set GameLength options 48000
 
 scoreboard players set floor_0.x data 0
 scoreboard players set floor_0.y data 20
@@ -18,3 +18,4 @@ scoreboard players set diff.f1 options 150
 scoreboard players set diff.f2 options 200
 
 scoreboard players set stair_1.open_time options 12000
+scoreboard players set stair_2.open_time options 24000

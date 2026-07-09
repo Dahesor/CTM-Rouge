@@ -1,4 +1,3 @@
-
 scoreboard players set stair.0_1.open data 1
 execute as @a at @s run playsound entity.wither.spawn master @s
 tellraw @a {text:"[!] 前往第二层的楼梯已经解锁！它位于第一层地图中心",color:"red"}
@@ -10,3 +9,5 @@ execute as @a[limit=1,scores={team=1}] run function rcore:stream/game/stair_1_op
 execute as @a[limit=1,scores={team=2}] run function rcore:stream/game/stair_1_open/edit_map
 execute as @a[limit=1,scores={team=3}] run function rcore:stream/game/stair_1_open/edit_map
 execute as @a[limit=1,scores={team=4}] run function rcore:stream/game/stair_1_open/edit_map
+
+execute as @a[tag=in_stairs,scores={join_game=1..}] at @s run function rcore:player/utils/location/stairs_check

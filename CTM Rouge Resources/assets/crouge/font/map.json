@@ -207,7 +207,7 @@
             "type": "bitmap",
             "ascent": 10,
             "height": 12,
-            "file":"crouge:font/map/stairs/3_lock.png",
+            "file":"crouge:font/map/stairs/3_time.png",
             "chars": [
                 "O"
             ]

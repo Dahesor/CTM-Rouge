@@ -1,0 +1,2 @@
+gamerule send_command_feedback false
+function sidebar.dah:reload

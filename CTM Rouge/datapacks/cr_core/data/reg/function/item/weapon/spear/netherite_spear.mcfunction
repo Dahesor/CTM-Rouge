@@ -1,8 +1,8 @@
 data modify storage reg:item new set value {\
-    id:"diamond_spear",\
+    id:"netherite_spear",\
     rarity:"legendary",\
     base_price:80,\
-    lore_line_count:3,\
+    lore_line_count:1,\
     in_shop:true,\
     spawner_loot:false,\
     stack:{\
