@@ -19,6 +19,8 @@ function rcore:core/wool/player/change_score
 
 execute if items entity @s armor.head *[custom_data~{item:{id:"gray_wool"}}] run return run function rcore:core/wool/player/gray_pickup
 
+execute if items entity @s armor.head *[custom_data~{item:{id:"orange_wool"}}] run item modify entity @s armor.head rcore:change_orange_lore
+
 ## Broadcast
 
     data modify storage ram: item set from entity 0-0-0-0-0 Items[{Slot:0b}]

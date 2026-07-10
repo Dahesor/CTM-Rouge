@@ -216,5 +216,13 @@
   "item.gray_wool.3": "§6收藏品",
   "item.gray_wool.4": "§a带回§c§l其他队伍§a的出生点得200分",
   "item.netherite_spear": "下界合金矛",
-  "item.netherite_spear.1": "又沉又尖"
+  "item.netherite_spear.1": "又沉又尖",
+  "item.orange_wool": "橙色羊毛【奇迹】",
+  "item.orange_wool.1": "有两件东西是要相信的：",
+  "item.orange_wool.2": "一件是光，另一件是奇迹。",
+  "item.orange_wool.3": "§6收藏品",
+  "item.orange_wool.4": "§a带回出生点获得160分",
+  "item.orange_wool.4.dynamic": "§a带回出生点获得%s分",
+  "item.orange_wool.5": "§e持有者每击杀一名敌方玩家，分值增加15",
+  "item.orange_wool.6": "§e玩家死亡时分数不重置"
 }

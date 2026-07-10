@@ -1,0 +1,30 @@
+{
+    "type": "multi_action",
+    "columns": 1,
+    "title": {"text": "CTM肉鸽竞速"},
+    "pause": false,
+    "after_action": "none",
+    "can_close_with_escape": true,
+    "actions": [
+        {
+            "label": {"text": "游戏管理"},
+            "tooltip": [
+                {"text": "管理游戏设置，开始游戏等"},
+                "\n",
+                {"text": "需要管理员权限","color": "red"}
+            ],
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 9001"
+            }
+        },
+        {
+            "label": "脱离卡死",
+            "tooltip": "若您在地图中卡死，点击此按钮\n若您正在进行游戏，将视为死亡。",
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 1001"
+            }
+        }
+    ]
+}

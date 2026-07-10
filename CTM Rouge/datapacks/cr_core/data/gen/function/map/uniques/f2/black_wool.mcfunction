@@ -1,5 +1,3 @@
-## Randomly select a room
-# we might generalize this later to be a function
 data modify storage ram: map set value []
 data modify storage ram: map append from storage map: construct.grid.cells[][{type:"room"}]
 execute store result score #rand calculator.cr run random value 1..2147483647 gen:unique_location

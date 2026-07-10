@@ -1,0 +1,10 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "mode": "replace_section",
+    "offset": 5,
+    "size": 1,
+    "lore": [
+        {"translate": "item.orange_wool.4.dynamic","with":[{"score": {"name":"wool.orange.score","objective":"data"}}],"color": "light_purple","italic": false}
+    ]
+}

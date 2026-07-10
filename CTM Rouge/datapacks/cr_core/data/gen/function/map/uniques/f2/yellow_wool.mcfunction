@@ -1,6 +1,3 @@
-## Randomly select a room
-# we might generalize this later to be a function
-
 data modify storage run: i set value {x:0,z:0}
 execute store result score #rand calculator.cr run random value 0..3 gen:unique_location
 

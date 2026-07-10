@@ -36,6 +36,7 @@ scoreboard objectives add tp.cd dummy
 scoreboard objectives add viewing_map dummy
 scoreboard objectives add hpkit dummy
 scoreboard objectives add wool.sneak dummy
+scoreboard objectives add sys.auth dummy
 
 team add red
 team add blue

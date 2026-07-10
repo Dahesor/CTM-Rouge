@@ -1,0 +1,3 @@
+execute if function rcore:core/auth/verify run return run function rcore:menu/op/main
+
+dialog show @s {type:"confirmation",title:"身份验证",body:[{type:"plain_message",contents:"使用本功能需要管理员权限。\n点击下方按钮以验证。\n验证30分钟内有效"}],pause:false,can_close_with_escape:true,no:{label:{translate:"gui.cancel"}},after_action:"close",yes:{label:"验证",action:{type:"run_command",command:"/function rcore:core/auth/redirect_self"}}}
