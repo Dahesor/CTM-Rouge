@@ -1,5 +1,5 @@
 execute store result score #rand calculator.cr run random value 1..100 gen:wool_availability
-execute unless score #rand calculator.cr matches 0.. run return fail
+execute unless score #rand calculator.cr matches 50.. run return fail
 
 data modify storage ram: map set value []
 data modify storage ram: map append from storage map: construct.grid.cells[][{type:"room"}]
