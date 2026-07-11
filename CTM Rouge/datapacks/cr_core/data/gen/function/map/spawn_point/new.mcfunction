@@ -7,6 +7,20 @@ execute store result storage ram: i.i int 1 run scoreboard players operation #ra
 scoreboard players set #target calculator.cr -1
 function gen:map/spawn_point/__get_location with storage ram: i
 
+scoreboard players operation #re calculator.cr = #target calculator.cr
+scoreboard players remove #re calculator.cr 1
+execute if score #re calculator.cr matches -1 run scoreboard players add #re calculator.cr 8
+execute store result storage ram: i.i int 1 run scoreboard players get #re calculator.cr
+function gen:map/spawn_point/__remove_index with storage ram: i
+
+
+scoreboard players operation #re calculator.cr = #target calculator.cr
+scoreboard players add #re calculator.cr 1
+execute if score #re calculator.cr matches 8.. run scoreboard players set #re calculator.cr 0
+execute store result storage ram: i.i int 1 run scoreboard players get #re calculator.cr
+function gen:map/spawn_point/__remove_index with storage ram: i
+
+
 # Get the #x and #z of the spawn point
 function gen:map/spawn_point/calc_where
 

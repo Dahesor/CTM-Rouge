@@ -194,7 +194,7 @@
   "item.green_wool.1": "同伴之间，",
   "item.green_wool.2": "应互信互助。",
   "item.green_wool.3": "§6收藏品",
-  "item.green_wool.4": "§a带回出生点获取240分",
+  "item.green_wool.4": "§a带回出生点获取260分",
   "item.yellow_wool": "黄色羊毛【太阳】",
   "item.yellow_wool.1": "在黑暗中点灯会引来阴暗之物的窥视，",
   "item.yellow_wool.2": "但太阳不会。",
@@ -209,7 +209,8 @@
   "item.black_wool.1": "啊，伟大的太阳啊！",
   "item.black_wool.2": "假若你不拥有你照耀的一切，",
   "item.black_wool.3": "你的光热有何意义？",
-  "item.black_wool.4": "§a带回出生点获取350分",
+  "item.black_wool.4": "§6收藏品",
+  "item.black_wool.5": "§a带回出生点获取350分",
   "item.gray_wool": "灰色羊毛【诡计】",
   "item.gray_wool.1": "挥剑仅小技，",
   "item.gray_wool.2": "活塞乃伟力。",
@@ -224,5 +225,12 @@
   "item.orange_wool.4": "§a带回出生点获得160分",
   "item.orange_wool.4.dynamic": "§a带回出生点获得%s分",
   "item.orange_wool.5": "§e持有者每击杀一名敌方玩家，分值增加15",
-  "item.orange_wool.6": "§e玩家死亡时分数不重置"
+  "item.orange_wool.6": "§e玩家死亡时分数不重置",
+  "item.purple_wool": "紫色羊毛【神秘】",
+  "item.purple_wool.1": "……可她不懂得还有更高深一层的魔法。",
+  "item.purple_wool.2": "她懂的那一套只到远古时代为止……",
+  "item.purple_wool.3": "但如果她能看得更远一点，",
+  "item.purple_wool.4": "她就会看到太古时代更加高深的魔法。",
+  "item.purple_wool.5": "§6收藏品",
+  "item.purple_wool.6": "§a带回出生点获取350分"
 }

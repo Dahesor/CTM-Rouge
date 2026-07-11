@@ -16,7 +16,7 @@ execute if data storage ram: stair_list[0] run function gen:map/stairs/connect/i
 scoreboard players operation #spawn_count calculator.cr = game.spawn_count options
 execute if score #spawn_count calculator.cr matches ..0 run scoreboard players set #spawn_count calculator.cr 1
 execute if score #spawn_count calculator.cr matches 5.. run scoreboard players set #spawn_count calculator.cr 4
-data modify storage run: list set value [0,1,2,3,4,5,6,7]
+data modify storage run: list set value [{i:0},{i:1},{i:2},{i:3},{i:4},{i:5},{i:6},{i:7}]
 execute if score room.spawn.create options matches 1.. run function gen:map/spawn_point/new
 
 # Place stairs

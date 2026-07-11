@@ -2,7 +2,7 @@ data modify storage reg:item new set value {\
     id:"black_wool",\
     rarity:"mythic",\
     base_price: 120,\
-    lore_line_count:4,\
+    lore_line_count:5,\
     in_shop:false,\
     spawner_loot:false,\
     stack:{\

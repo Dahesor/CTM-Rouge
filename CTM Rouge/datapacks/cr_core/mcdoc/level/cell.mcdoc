@@ -53,6 +53,8 @@ enum(string) CellTypes{
     Shop = "shop",
     /// TP
     Teleporter = "teleporter",
+    /// Public tp
+    Public_Teleporter = "public_tp",
 }
 
 enum(string) SpecialTypes{
@@ -67,6 +69,7 @@ enum(string) SpecialTypes{
     black_wool = "black_wool",
     gray_wool = "gray_wool",
     orange_wool = "orange_wool",
+    purple_wool = "purple_wool",
 }
 
 struct stair_room{
@@ -88,6 +91,7 @@ struct Teleporters{
     ...CellMeta,
     urid?: int,
     team?: Team,
+    public?: true,
 }
 
 struct Shops{

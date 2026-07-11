@@ -1,8 +1,12 @@
 scoreboard players operation $this floor = $this room
 scoreboard players operation $this floor /= floor.room_count options
+
 $execute if score $this floor matches 0 unless data storage map: ground.tp[{urid:$(i)}] run return fail
 $execute if score $this floor matches 1 unless data storage map: upper.tp[{urid:$(i)}] run return fail
 $execute if score $this floor matches 2 unless data storage map: top.tp[{urid:$(i)}] run return fail
+
+$execute if score $this floor matches 1 if data storage map: upper.tp[{urid:$(i),public:true}] run return run function rcore:menu/map/action/__public_tp with storage ram: i
+$execute if score $this floor matches 2 if data storage map: top.tp[{urid:$(i),public:true}] run return run function rcore:menu/map/action/__public_tp with storage ram: i
 
 $execute if score $this floor matches 0 run data modify storage run: color set from storage map: ground.tp[{urid:$(i)}].team
 $execute if score $this floor matches 1 run data modify storage run: color set from storage map: upper.tp[{urid:$(i)}].team

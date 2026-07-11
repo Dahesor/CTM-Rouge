@@ -14,6 +14,7 @@ tag @a remove has_wool
 tag @a remove in_room
 tag @a remove magenta.f1
 tag @a remove magenta.f2
+tag @a remove in_public_tp
 
 data modify storage ram: text set value [{text:"游戏结束！地图种子为",color:"green"},{score:{name:"seed",objective:"data"},color:"yellow",underlined:true,hover_event:{action:"show_text",value:"点击复制"},click_event:{action:"copy_to_clipboard",value:"1"},insertion:""}]
 execute store result storage ram: i.i int 1 run scoreboard players get seed data
@@ -23,4 +24,5 @@ tellraw @a {storage:"ram:",nbt:"text",interpret:true}
 
 bossbar remove rcore:boss/iron_golem
 bossbar remove rcore:boss/slime_king
+bossbar remove rcore:boss/enderman
 bossbar remove rcore:boss/warden

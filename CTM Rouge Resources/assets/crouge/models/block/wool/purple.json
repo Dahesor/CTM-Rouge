@@ -1,0 +1,6 @@
+{
+    "parent": "crouge:block/big_wool",
+    "textures": {
+        "all": "block/purple_wool"
+    }
+}

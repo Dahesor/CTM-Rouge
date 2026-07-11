@@ -24,6 +24,7 @@ execute as @a unless score @s join_game matches 1.. run gamemode spectator @s
 tag @a remove has_wool
 tag @a remove magenta.f1
 tag @a remove magenta.f2
+tag @a remove in_public_tp
 scoreboard players reset * death
 scoreboard players reset * revive_cd
 scoreboard players set game data 1

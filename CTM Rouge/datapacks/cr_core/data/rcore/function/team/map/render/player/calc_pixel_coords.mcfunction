@@ -13,7 +13,6 @@ function rcore:team/map/render/player/resize/x
 scoreboard players operation $this pos_x /= map_spacing options
 scoreboard players operation $this pos_x *= #20 calculator.cr
 scoreboard players operation $this pos_x += $delta pos_x
-#tellraw @a {score:{name:"$this",objective:"pos_x"}}
 function rcore:team/map/render/player/get_horizontal_shift
 
 # z coord

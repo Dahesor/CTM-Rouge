@@ -89,6 +89,15 @@
             "type": "bitmap",
             "ascent": 10,
             "height": 12,
+            "file":"crouge:font/map/tp_public.png",
+            "chars": [
+                "j"
+            ]
+        },
+        {
+            "type": "bitmap",
+            "ascent": 10,
+            "height": 12,
             "file":"crouge:font/map/red_spawn.png",
             "chars": [
                 "R"

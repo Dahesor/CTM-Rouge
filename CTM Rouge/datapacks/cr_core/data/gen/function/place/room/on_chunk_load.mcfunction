@@ -33,6 +33,7 @@ execute if data storage ram: map_cell{special:"yellow_wool"} run function gen:pl
 execute if data storage ram: map_cell{special:"magenta_wool"} positioned ~15.5 ~17 ~15.5 run function gen:place/room/post/wool/magenta
 execute if data storage ram: map_cell{special:"gray_wool"} positioned ~15.5 ~17 ~15.5 run function gen:place/room/post/wool/gray
 execute if data storage ram: map_cell{special:"orange_wool"} positioned ~15.5 ~17 ~15.5 run function gen:place/room/post/wool/orange
+execute if data storage ram: map_cell{special:"purple_wool"} positioned ~15.5 ~15 ~15.5 run function gen:place/room/post/wool/purple
 
 execute if data storage run: rm{pos_z:true} run function gen:place/room/path/up
 execute if data storage run: rm{pos_x:true} run function gen:place/room/path/left

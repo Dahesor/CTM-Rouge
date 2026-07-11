@@ -23,3 +23,6 @@ execute as @e[type=item,tag=wool.entity] at @s run function rcore:core/wool/exe
 execute if score #loop_5 calculator.cr matches 2 as @e[type=item,tag=floating_item] at @s run function rcore:math/track_item/self
 execute if score #loop_20 calculator.cr matches 2 run bossbar set rcore:boss/slime_king players @a[tag=empty_set]
 execute as @e[type=slime,tag=boss.slime_king] at @s run function rcore:ai/slime/tick
+
+execute if score #loop_20 calculator.cr matches 6 run bossbar set rcore:boss/enderman players @a[tag=empty_set]
+execute as @e[type=enderman,tag=boss.enderman] at @s run function rcore:ai/enderman/tick

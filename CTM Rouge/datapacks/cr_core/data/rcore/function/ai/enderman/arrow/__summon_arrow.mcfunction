@@ -1,0 +1,2 @@
+$summon arrow ~ ~ ~ {Rotation:[$(x)f,$(y)f],Tags:["__unintialized","boss.enderman.arrow","game_clear"],pickup:2b}
+execute as @e[type=arrow,tag=__unintialized,distance=..3,tag=boss.enderman.arrow] run function rcore:ai/enderman/arrow/arrow_self

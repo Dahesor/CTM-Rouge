@@ -11,3 +11,4 @@ function reg:item/monument/magenta
 function reg:item/monument/black
 function reg:item/monument/gray
 function reg:item/monument/orange
+function reg:item/monument/purple

@@ -22,6 +22,6 @@ data modify storage reg:item new set value {\
     }\
 }
 
-scoreboard players set wool.green.score const 240
+scoreboard players set wool.green.score const 260
 
 function reg:item/reg/new

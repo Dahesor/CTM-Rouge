@@ -11,7 +11,6 @@ scoreboard players remove #max_idx calculator.cr 1
     execute if score #target calculator.cr matches 4 run scoreboard players operation #x calculator.cr = #max_idx calculator.cr
     execute if score #target calculator.cr matches 4 run return run scoreboard players operation #z calculator.cr = #max_idx calculator.cr
 
-
     execute if score #target calculator.cr matches 6 run scoreboard players set #x calculator.cr 0
     execute if score #target calculator.cr matches 6 run return run scoreboard players operation #z calculator.cr = #max_idx calculator.cr
 # On corners

@@ -5,6 +5,7 @@ execute if data storage team: cell{type:"shop"} run return run data modify stora
 execute if data storage team: cell{type:"special"} run return run function rcore:team/map/build/icon/special
 execute if data storage team: cell{type:"stairs"} run return run function rcore:team/map/build/icon/stairs
 execute if data storage team: cell{type:"teleporter"} run return run function rcore:team/map/build/icon/teleport
+execute if data storage team: cell{type:"public_tp"} run return run data modify storage run: icon set value "j-"
 
 execute if function rcore:player/utils/condition/at_spawn run data modify storage run: icon_private set value "H-"
 execute if data storage team: cell{type:"spawn"}.spawn_room{owner:"red"} run return run data modify storage run: icon set value "R-"

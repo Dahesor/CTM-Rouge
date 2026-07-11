@@ -50,6 +50,7 @@ execute if function rcore:player/utils/condition/at_spawn run function rcore:cor
 #> Gray Wool: Check if went to other team's spawn
 execute if function rcore:player/utils/condition/in_other_team_spawn run function rcore:core/score/other_spawn
 function rcore:player/utils/location/stairs_check
+function rcore:player/utils/location/public_tp_test
 
 #> Check for new room discovery
 function rcore:player/utils/location/room_discovery
