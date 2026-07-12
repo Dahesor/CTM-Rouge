@@ -1,3 +1,5 @@
+execute unless data storage reg:item new.stack.components."minecraft:tooltip_style" run function reg:item/reg/frame
+
 execute if data storage reg:item new{rarity:"common"} run return run data modify storage reg:item new.stack.components."minecraft:lore" append value [{text:"普通",color:"green",italic:false}]
 execute if data storage reg:item new{rarity:"rare"} run return run data modify storage reg:item new.stack.components."minecraft:lore" append value [{text:"稀有",color:"#237bff",italic:false}]
 execute if data storage reg:item new{rarity:"epic"} run return run data modify storage reg:item new.stack.components."minecraft:lore" append value [{text:"史诗",color:"light_purple",italic:false}]

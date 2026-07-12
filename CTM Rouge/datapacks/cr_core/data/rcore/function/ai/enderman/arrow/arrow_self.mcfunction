@@ -1,5 +1,8 @@
 tag @s remove __unintialized
-execute positioned ^ ^ ^3 summon marker run function rcore:math/track_item/motion
+data modify storage run: i set value {u:0d,v:0d}
+execute store result storage run: i.u double 0.01 run random value -20..20 gen:trivial
+execute store result storage run: i.v double 0.01 run random value -20..20 gen:trivial
+function rcore:ai/enderman/arrow/__spread_arrow with storage run: i
 
 data modify storage run: motion set value [0d,0d,0d]
 execute store result score $this pos_x run data get storage run: pos[0] 1000

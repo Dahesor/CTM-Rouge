@@ -1,0 +1,30 @@
+{
+    "anvil_cost": 999,
+    "description": "NULL",
+    "max_cost": {"base": 9,"per_level_above_first": 0},
+    "min_cost": {"base": 20,"per_level_above_first": 0},
+    "max_level": 100,
+    "slots": ["saddle"],
+    "supported_items": ["structure_void"],
+    "weight": 1,
+    "effects": {
+        "tick": [
+            {
+                "effect": {
+                    "type": "ignite",
+                    "duration": {
+                        "type": "linear",
+                        "base": 1,
+                        "per_level_above_first": 1
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "rcore:player/utils/_end_ignite"
+                }
+            }
+        ]
+    }
+}

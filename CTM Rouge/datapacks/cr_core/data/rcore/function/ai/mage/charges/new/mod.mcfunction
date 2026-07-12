@@ -1,0 +1,1 @@
+execute summon marker run function rcore:ai/mage/charges/new/_mod_marker

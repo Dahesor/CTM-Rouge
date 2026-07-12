@@ -1,0 +1,5 @@
+execute if data storage reg:item new{rarity:"common"} run return run data modify storage reg:item new.stack.components."minecraft:tooltip_style" set value "crouge:rarity/common"
+execute if data storage reg:item new{rarity:"rare"} run return run data modify storage reg:item new.stack.components."minecraft:tooltip_style" set value "crouge:rarity/rare"
+execute if data storage reg:item new{rarity:"epic"} run return run data modify storage reg:item new.stack.components."minecraft:tooltip_style" set value "crouge:rarity/epic"
+execute if data storage reg:item new{rarity:"legendary"} run return run data modify storage reg:item new.stack.components."minecraft:tooltip_style" set value "crouge:rarity/legendary"
+execute if data storage reg:item new{rarity:"mythic"} run return run data modify storage reg:item new.stack.components."minecraft:tooltip_style" set value "crouge:rarity/mythic"

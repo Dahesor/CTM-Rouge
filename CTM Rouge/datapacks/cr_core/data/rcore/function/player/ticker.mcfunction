@@ -21,3 +21,4 @@ function rcore:player/use/bow
 execute if entity @s[tag=range_wool] run function rcore:core/wool/player
 execute if score #loop_5 calculator.cr matches 4 run function rcore:player/utils/soul_bind/main
 execute unless score @s hpkit matches 0 run function rcore:player/use/hpkit/tick_run
+execute if entity @s[tag=sneak_with_knockres] run function rcore:ai/warden/player_sneak

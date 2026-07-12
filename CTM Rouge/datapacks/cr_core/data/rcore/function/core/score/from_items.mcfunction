@@ -13,3 +13,4 @@ execute if items entity @s armor.head *[custom_data~{item:{id:"yellow_wool"}}] r
 execute if items entity @s armor.head *[custom_data~{item:{id:"magenta_wool"}}] run function rcore:core/score/gain/magenta
 execute if items entity @s armor.head *[custom_data~{item:{id:"orange_wool"}}] run function rcore:core/score/gain/orange
 execute if items entity @s armor.head *[custom_data~{item:{id:"purple_wool"}}] run function rcore:core/score/gain/purple
+execute if items entity @s armor.head *[custom_data~{item:{id:"brown_wool"}}] run function rcore:core/score/gain/brown

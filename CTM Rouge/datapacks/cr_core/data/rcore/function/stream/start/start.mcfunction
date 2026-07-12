@@ -25,6 +25,7 @@ tag @a remove has_wool
 tag @a remove magenta.f1
 tag @a remove magenta.f2
 tag @a remove in_public_tp
+tag @a remove boss.enderman.ttar
 scoreboard players reset * death
 scoreboard players reset * revive_cd
 scoreboard players set game data 1

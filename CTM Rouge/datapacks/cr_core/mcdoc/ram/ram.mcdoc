@@ -37,6 +37,7 @@ dispatch minecraft:storage["ram:"] to struct Ram{
         [(DecListNames|string)]?: DecList,
     },
     shopStock?: shopStock,
+    Owner?: #[uuid] string,
 }
 
 enum(string) DecListNames{

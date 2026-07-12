@@ -70,6 +70,7 @@ enum(string) SpecialTypes{
     gray_wool = "gray_wool",
     orange_wool = "orange_wool",
     purple_wool = "purple_wool",
+    brown_wool = "brown_wool",
 }
 
 struct stair_room{

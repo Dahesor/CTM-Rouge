@@ -45,6 +45,8 @@ execute if score @s room = $this room run return 1
 #Room Changed
 scoreboard players operation @s room = $this room
 scoreboard players operation $this floor = @s floor
+execute if entity @s[tag=sneak_with_knockres] run attribute @s spawn_reinforcements modifier remove rcore:sneak_knockres
+tag @s remove sneak_with_knockres
 #> Check if player got back to spawn
 execute if function rcore:player/utils/condition/at_spawn run function rcore:core/score/from_items
 #> Gray Wool: Check if went to other team's spawn

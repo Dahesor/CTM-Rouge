@@ -1,0 +1,1 @@
+$damage @s $(amount) indirect_magic by $(dmg)

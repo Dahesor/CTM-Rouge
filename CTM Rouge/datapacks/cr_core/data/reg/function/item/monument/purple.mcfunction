@@ -16,7 +16,7 @@ data modify storage reg:item new set value {\
             equip_sound:"intentionally_empty",dispensable:false,can_be_sheared:false,\
             damage_on_hurt:false,swappable:false},\
         "minecraft:tooltip_display":{hidden_components:["enchantments"]},\
-        damage_resistant:{types:"#rcore:all"},tooltip_style:"crouge:wool/purple",\
+        damage_resistant:{types:"#rcore:all"},"minecraft:tooltip_style":"crouge:wool/purple",\
         item_model:"crouge:wools/purple"\
         }\
     }\

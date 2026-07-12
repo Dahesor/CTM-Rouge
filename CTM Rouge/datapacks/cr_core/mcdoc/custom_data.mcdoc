@@ -3,6 +3,7 @@ use::reg::item::RegistryItem
 dispatch mcdoc:custom_data["__temp_item"] to boolean
 dispatch mcdoc:custom_data["isTerraRestore"] to boolean
 dispatch mcdoc:custom_data["shopDisplayItem"] to boolean
+dispatch mcdoc:custom_data["Owner"] to #[uuid] string
 dispatch mcdoc:custom_data["soul_bind"] to struct {name?: string}
 dispatch mcdoc:custom_data["captureIconCache"] to struct {
     urid?: int,

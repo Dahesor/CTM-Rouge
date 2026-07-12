@@ -4,7 +4,8 @@ execute if score #loop_5 calculator.cr matches 2 unless data entity @s angry_at 
 
 execute unless entity @s[tag=active] run return fail
 
-scoreboard players add @s genericCD 1
+scoreboard players add @s[tag=!throwing] genericCD 1
+execute if score @s[tag=throwing] interaction matches 0.. run function rcore:ai/enderman/throw/tick
 execute if score @s genericCD matches 1 run kill @e[type=arrow,tag=boss.enderman.arrow]
 execute if score @s genericCD matches 1200.. run scoreboard players set @s genericCD 0
 execute if score @s genericCD matches 400 run function rcore:ai/enderman/rabbit/summon

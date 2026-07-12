@@ -1,0 +1,1 @@
+execute at @s positioned ^ ^ ^1 run function rcore:player/utils/misc/_shield_disable

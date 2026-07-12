@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "blocked":{
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": true,
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "rcore:is_arrow"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rcore:player/utils/block_arrow_with_shield"
+    }
+}
