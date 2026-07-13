@@ -12,6 +12,7 @@ execute unless score game data matches 1.. run return fail
 execute unless score @s join_game matches 1.. run return fail
 execute if score @s death matches 1.. run function rcore:player/death/dead
 execute if score @s revive_cd matches 1.. run return run function rcore:player/death/cd
+execute if score @s shield.using matches 1.. run scoreboard players remove @s shield.using 1
 
 # Alive Player
 execute if score @s soul.arrow_cd matches 1.. run scoreboard players remove @s soul.arrow_cd 1

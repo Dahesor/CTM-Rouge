@@ -4,7 +4,13 @@ execute as @e[type=marker,tag=pre.game_clear,distance=..100,tag=cr.spawner] at @
 kill @e[type=marker,tag=dabsu.marker,distance=..100]
 
 #For test, use only this pool
-data modify storage reg:enemy_pool this set from storage reg:enemy_pool reg[{id:"undead_regular"}]
+data modify storage reg:enemy_pool zrun set from storage reg:enemy_pool reg[{id:"all"}]
+data modify storage reg:enemy_pool this set from storage reg:enemy_pool zrun
+data modify storage reg:enemy_pool this.contents set value []
+execute if score floor.level options matches 0 run data modify storage reg:enemy_pool this.contents append from storage reg:enemy_pool zrun.contents[{in_floor:[0]}]
+execute if score floor.level options matches 1 run data modify storage reg:enemy_pool this.contents append from storage reg:enemy_pool zrun.contents[{in_floor:[1]}]
+execute if score floor.level options matches 2 run data modify storage reg:enemy_pool this.contents append from storage reg:enemy_pool zrun.contents[{in_floor:[2]}]
+data remove storage reg:enemy_pool zrun
 
 # -> #final_count@calculator.cr
 function gen:place/room/post/spawner/count

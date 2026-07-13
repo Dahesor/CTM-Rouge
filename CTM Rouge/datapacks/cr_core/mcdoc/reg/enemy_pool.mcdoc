@@ -1,3 +1,5 @@
+use::reg::mob::SpawnerMob
+
 dispatch minecraft:storage["reg:enemy_pool"] to struct {
     reg?: [EnemyPool],
     this?: EnemyPool,
@@ -9,9 +11,9 @@ dispatch minecraft:storage["reg:enemy_pool"] to struct {
 
 struct EnemyPool{
     /// ID of this pool
-    id?: string,
+    id?: EnemyPoolIDs,
     /// Mobs ID that can spawn from this pool
-    contents?: [string],
+    contents?: [SpawnerMob],
     /// Tags that can be used to filter this pool
     tags?: [SpawnerMobSeries],
     /// Weight of this pool
@@ -20,6 +22,10 @@ struct EnemyPool{
     average_difficulty?: int,
     /// Difficulty rating of this pool
     rating?: int @..10,
+}
+
+enum(string) EnemyPoolIDs {
+    all = "all"
 }
 
 

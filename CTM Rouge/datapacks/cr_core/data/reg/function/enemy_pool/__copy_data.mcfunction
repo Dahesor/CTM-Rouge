@@ -1,0 +1,1 @@
+$data modify storage reg:enemy_pool reg[-1].contents append from storage reg:mob reg[{in_pools:["$(id)"]}]

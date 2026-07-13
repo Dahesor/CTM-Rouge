@@ -3,6 +3,7 @@ tag @s add game_clear
 scoreboard players operation @s interaction = $this interaction
 
 execute positioned ^ ^ ^1.3 run function rcore:ai/mage/charges/new/_motion
+tp @s ~ ~ ~ ~ ~
 
 scoreboard players operation @s interaction = $this interaction
 data modify entity @s data.Owner set from storage ram: Owner

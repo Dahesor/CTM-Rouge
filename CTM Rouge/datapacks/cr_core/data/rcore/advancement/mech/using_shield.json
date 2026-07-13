@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "shielding":{
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": ["shield"]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rcore:player/utils/shield_using"
+    }
+}

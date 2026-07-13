@@ -14,6 +14,7 @@ $random reset gen:shop_restock $(seed) false true
 $random reset gen:shop_rarity $(seed) false true
 $random reset gen:shop_price $(seed) false true
 $random reset gen:emerald_drop $(seed) false true
+$random reset gen:tr_drop $(seed) false true
 $random reset gen:loot_drop $(seed) false true
 $random reset gen:loot_rarity $(seed) false true
 $random reset gen:stair_location $(seed) false true

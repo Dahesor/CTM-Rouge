@@ -1,3 +1,5 @@
+use::reg::enemy_pool::EnemyPoolIDs
+
 dispatch minecraft:storage["reg:mob"] to struct {
     reg?: [SpawnerMob],
     this?: SpawnerMob,
@@ -9,4 +11,6 @@ struct SpawnerMob{
     type?: #[id="entity_type"] string,
     data?: minecraft:entity[[type]],
     difficulty?: int,
+    in_floor?: [int @ 0..2] @ ..3,
+    in_pools?: [EnemyPoolIDs],
 }

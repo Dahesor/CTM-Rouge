@@ -26,5 +26,4 @@ execute as @e[type=slime,tag=boss.slime_king] at @s run function rcore:ai/slime/
 
 execute if score #loop_20 calculator.cr matches 6 run bossbar set rcore:boss/enderman players @a[tag=empty_set]
 execute as @e[type=enderman,tag=boss.enderman] at @s run function rcore:ai/enderman/tick
-#execute as @e[type=husk,tag=boss.mage] at @s run function rcore:ai/mage/tick
 execute as @e[type=marker,tag=magic_charge] at @s run function rcore:ai/mage/charges/tick

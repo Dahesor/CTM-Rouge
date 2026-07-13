@@ -13,10 +13,8 @@ scoreboard players operation $this_difficulty calculator.cr /= #100 calculator.c
 # selected a mob from pool
 execute store result score #max calculator.cr run data get storage reg:enemy_pool this.contents
 execute store result score #rand calculator.cr run random value 1..999999999 gen:mob_from_pool
-scoreboard players operation #rand calculator.cr %= #max calculator.cr
-execute store result storage ram: i.i int 1 run scoreboard players get #rand calculator.cr
-function gen:place/room/post/spawner/__get_index with storage ram: i
-function gen:place/room/post/spawner/__get_mob with storage reg:enemy_pool _
+execute store result storage ram: i.i int 1 run scoreboard players operation #rand calculator.cr %= #max calculator.cr
+function gen:place/room/post/spawner/__get_mob with storage ram: i
 
 # Check difficulty and adjust if necessary
 scoreboard players operation $use.min_time calculator.cr = mob.identity_min_time options

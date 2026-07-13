@@ -18,3 +18,4 @@ execute as @e[type=iron_golem,tag=boss_wool,tag=boss.iron_golem] at @s run funct
 execute as @e[type=warden,tag=boss_wool,tag=boss.warden] at @s run function rcore:ai/warden/second
 execute as @e[type=marker,tag=light_gray_wool.hidden] at @s run function rcore:ai/miner/second
 execute as @e[type=husk,tag=boss.mage] at @s run function rcore:ai/mage/second
+execute as @e[type=husk,tag=mage] at @s run function rcore:ai/mage/simple/second

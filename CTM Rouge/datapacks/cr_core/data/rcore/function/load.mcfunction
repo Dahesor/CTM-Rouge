@@ -37,6 +37,7 @@ scoreboard objectives add viewing_map dummy
 scoreboard objectives add hpkit dummy
 scoreboard objectives add wool.sneak dummy
 scoreboard objectives add sys.auth dummy
+scoreboard objectives add shield.using dummy
 
 team add red
 team add blue

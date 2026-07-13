@@ -1,0 +1,1 @@
+data modify storage reg:mob reg append value {type:"breeze",data:{},difficulty:100,id:"breeze_generic"}

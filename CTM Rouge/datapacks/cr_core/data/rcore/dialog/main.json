@@ -7,6 +7,14 @@
     "can_close_with_escape": true,
     "actions": [
         {
+            "label": "打开地图",
+            "tooltip": "打开游戏地图",
+            "action": {
+                "type": "run_command",
+                "command": "/trigger dialog set 1"
+            }
+        },
+        {
             "label": {"text": "游戏管理"},
             "tooltip": [
                 {"text": "管理游戏设置，开始游戏等"},

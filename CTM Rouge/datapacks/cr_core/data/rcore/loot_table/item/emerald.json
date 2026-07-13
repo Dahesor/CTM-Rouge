@@ -10,5 +10,21 @@
                 }
             ]
         }
+    ],
+    "functions": [
+        {
+            "function": "set_components",
+            "components": {
+                "tooltip_style": "crouge:misc/emerald",
+                "can_break": {
+                    "blocks": ["spawner"]
+                },
+                "item_name": {"translate": "item.minecraft.emerald","color": "green"},
+                "lore": [{"text": "货币","color":"white","italic": false}],
+                "tooltip_display": {
+                    "hidden_components": ["can_break"]
+                }
+            }
+        }
     ]
 }

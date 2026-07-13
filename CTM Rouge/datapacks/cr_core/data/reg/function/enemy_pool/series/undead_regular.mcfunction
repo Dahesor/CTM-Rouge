@@ -1,3 +1,0 @@
-data modify storage reg:enemy_pool reg append value {id:"undead_regular",tags:["undead","cave","overworld_night"],weight:100,average_difficulty:30,rating:1,contents:\
-    ["zombie_generic","zombie_with_leather_armor","zombie_with_chainmail_armor","zombie_with_golden_armor","zombie_with_copper_armor","zombie_with_wooden_sword","zombie_with_stone_sword","zombie_with_golden_sword","zombie_with_copper_sword","skeleton_generic","skeleton_with_leather_armor","skeleton_with_chainmail_armor","skeleton_with_copper_armor","blaze_generic","wither_skeleton_generic","creeper_generic","charged_creeper","spider_generic","cave_spider"]\
-}
