@@ -25,3 +25,6 @@ execute if score @s team matches 4 run scoreboard players operation score.green 
 execute as @a if score @s team = $this team at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~
 execute as @a unless score @s team = $this team at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 1 0.6 1
 tag @s remove __this
+
+scoreboard players operation #count calculator.cr *= EMERALD.TERRA_RESTORE options
+loot give @s loot rcore:mech/drop_emerald

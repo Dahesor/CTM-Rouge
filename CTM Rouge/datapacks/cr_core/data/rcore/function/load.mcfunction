@@ -81,6 +81,7 @@ scoreboard players set #12 calculator.cr 12
 scoreboard players set #16 calculator.cr 16
 scoreboard players set #18 calculator.cr 18
 scoreboard players set #20 calculator.cr 20
+scoreboard players set #25 calculator.cr 25
 scoreboard players set #50 calculator.cr 50
 scoreboard players set #100 calculator.cr 100
 scoreboard players set #360 calculator.cr 360

@@ -13,3 +13,6 @@ function reg:item/monument/gray
 function reg:item/monument/orange
 function reg:item/monument/purple
 function reg:item/monument/brown
+function reg:item/monument/red
+function reg:item/monument/blue
+function reg:item/monument/cyan

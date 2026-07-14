@@ -43,6 +43,7 @@ execute unless entity @s[tag=in_room] run return 1
 execute if score @s room = $this room run return 1
 
 #Room Changed
+tag @s remove player.speed_up
 scoreboard players operation @s room = $this room
 scoreboard players operation $this floor = @s floor
 execute if entity @s[tag=sneak_with_knockres] run attribute @s spawn_reinforcements modifier remove rcore:sneak_knockres

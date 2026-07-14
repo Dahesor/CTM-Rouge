@@ -1,5 +1,8 @@
 scoreboard players set REVIVE_COOLDOWN options 600
-scoreboard players set SCORE.TERRA_RESTORE options 10
+scoreboard players set SCORE.TERRA_RESTORE options 20
+scoreboard players set EMERALD.TERRA_RESTORE options 5
+scoreboard players set EMERALD.PLAYER_BOOST options 25
+scoreboard players set LOOT_DROP.PLAYER_BOOST options 30
 scoreboard players set TP.CD options 100
 scoreboard players set GameLength options 48000
 

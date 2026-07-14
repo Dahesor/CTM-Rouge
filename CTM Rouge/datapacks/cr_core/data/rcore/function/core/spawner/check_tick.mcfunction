@@ -1,9 +1,18 @@
 execute if block ~ ~ ~ spawner run return fail
 
-## sSpawner mined
+## Spawner mined
 
+scoreboard players operation $this room = @s room
+scoreboard players operation @s floor = @s room
+scoreboard players operation @s floor /= floor.room_count options
+scoreboard players set #player_count calculator.cr 0
+execute as @a[gamemode=!spectator,distance=..70,scores={join_game=1..}] if score @s room = $this room run scoreboard players add #player_count calculator.cr 1
 playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1.3
-execute store result score #count calculator.cr run random value 2..4 gen:emerald_drop
+execute if score @s floor matches 0 store result score #count calculator.cr run random value 2..4 gen:emerald_drop
+execute if score @s floor matches 1 store result score #count calculator.cr run random value 3..7 gen:emerald_drop
+execute if score @s floor matches 2 store result score #count calculator.cr run random value 6..10 gen:emerald_drop
+execute if score #player_count calculator.cr matches 2.. run function rcore:core/spawner/rates/emerald_boost
+
 loot spawn ~ ~ ~ loot rcore:mech/drop_emerald
 
 ## Room Cleared Check
@@ -17,13 +26,13 @@ function rcore:core/spawner/monu/gift
 particle cloud ~ ~ ~ 0.1 0.2 0.1 0.2 30 force @a
 playsound entity.player.levelup master @a ~ ~ ~ 1 1.3
 
-execute store result score #rarity calculator.cr run function rcore:core/spawner/rates_normal
-function rcore:core/spawner/to_this
-execute store result score #max calculator.cr run data get storage reg:shop_pool this
-execute store result score #rand calculator.cr run random value 0..99999999 gen:loot_drop
-execute store result storage ram: i.i int 1 run scoreboard players operation #rand calculator.cr %= #max calculator.cr
-function rcore:shop/stock/__get_item with storage ram: i
-function reg:item/get/single_spawn_floating
+function rcore:core/spawner/drop_loot
+scoreboard players set #player_count calculator.cr 0
+execute as @a[gamemode=!spectator,distance=..70,scores={join_game=1..}] if score @s room = #cleared_room room run scoreboard players add #player_count calculator.cr 1
+scoreboard players remove #player_count calculator.cr 1
+scoreboard players operation #player_count calculator.cr *= LOOT_DROP.PLAYER_BOOST options
+execute store result score #rand calculator.cr run random value 0..100 gen:loot_extra
+execute if score #rand calculator.cr < #player_count calculator.cr run function rcore:core/spawner/drop_loot
 
 #Update info
 data modify storage run: i set value {x:0,z:0}
