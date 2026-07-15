@@ -17,7 +17,9 @@ execute as @a[scores={join_game=0}] at @s run playsound crouge:tp.captured maste
 data modify storage run: id set from storage ram: item.components."minecraft:custom_data".item.id
 function rcore:core/wool/player/change_score
 
-execute if items entity @s armor.head *[custom_data~{item:{id:"gray_wool"}}] run return run function rcore:core/wool/player/gray_pickup
+execute if items entity @s armor.head *[custom_data~{item:{id:"gray_wool"}}] run return run function rcore:core/wool/player/special/gray_pickup
+
+execute if items entity @s armor.head *[custom_data~{item:{id:"cyan_wool"}}] run return run function rcore:core/wool/player/special/cyan_pickup
 
 execute if items entity @s armor.head *[custom_data~{item:{id:"orange_wool"}}] run item modify entity @s armor.head rcore:change_orange_lore
 

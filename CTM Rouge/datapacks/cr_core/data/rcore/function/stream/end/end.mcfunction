@@ -28,3 +28,4 @@ bossbar remove rcore:boss/slime_king
 bossbar remove rcore:boss/enderman
 bossbar remove rcore:boss/warden
 bossbar remove rcore:boss/mage
+bossbar remove rcore:boss/just

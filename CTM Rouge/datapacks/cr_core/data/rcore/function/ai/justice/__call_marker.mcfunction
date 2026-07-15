@@ -1,0 +1,1 @@
+$execute at $(Owner) run function rcore:ai/justice/check_at_home

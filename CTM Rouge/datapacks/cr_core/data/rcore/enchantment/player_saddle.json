@@ -36,6 +36,10 @@
                                         {
                                             "expected": false,
                                             "id": "rcore:spear"
+                                        },
+                                        {
+                                            "expected": false,
+                                            "id": "bypasses_invulnerability"
                                         }
                                     ]
                                 }
@@ -57,6 +61,49 @@
                                         }
                                     }
                                 }
+                            },
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "damage_source_properties",
+                                        "predicate": {
+                                            "tags": [
+                                                {
+                                                    "expected": true,
+                                                    "id": "rcore:is_arrow"
+                                                },
+                                                {
+                                                    "expected": false,
+                                                    "id": "bypasses_invulnerability"
+                                                }
+                                            ],
+                                            "source_entity": {
+                                                "entity_tags": {
+                                                    "all_of": [
+                                                        "boss.just"
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "inverted",
+                                        "term": {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "stepping_on": {
+                                                    "block": {
+                                                        "blocks": [
+                                                            "cyan_wool"
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
                             }
                         ]
                     }

@@ -1,0 +1,1 @@
+execute positioned ~-10 0 ~-10 if entity @s[dx=20,dy=100,dz=20] run scoreboard players set #success calculator.cr 1

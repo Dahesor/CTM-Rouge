@@ -1,5 +1,5 @@
 data modify storage reg:item this set from storage reg:item reg[{id:"orange_wool"}]
-data modify storage ram: text set value "50%生成于第二层随机位置"
+data modify storage ram: text set value "50%生成于第三层随机位置"
 data modify storage run: color set value gold
 
 

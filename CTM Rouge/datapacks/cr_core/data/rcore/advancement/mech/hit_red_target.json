@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "hurt_target":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "entity_tags": {
+                        "all_of": ["boss.target"]
+                    },
+                    "entity_type": "snow_golem"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rcore:ai/target/hit"
+    }
+}

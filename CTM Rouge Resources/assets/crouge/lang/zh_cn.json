@@ -262,10 +262,13 @@
   "item.cyan_wool": "青色羊毛【正义】",
   "item.cyan_wool.1": "Iustitia omnia vincit.",
   "item.cyan_wool.2": "§6收藏品",
-  "item.cyan_wool.3": "§a带回出生点获取200分",
+  "item.cyan_wool.3": "§a带回出生点后，§c§l分数最低的队伍§a获取200分",
   "item.red_wool": "红色羊毛【力量】",
   "item.red_wool.1": "古人将事迹刻在石头上，",
   "item.red_wool.2": "后人却称之为力量。",
   "item.red_wool.3": "§6收藏品",
-  "item.red_wool.4": "§a带回出生点获取200分"
+  "item.red_wool.4": "§a带回出生点获取200分",
+  "item.strength_potion": "力量药水",
+  "item.strength_potion.1": "秀秀肌肉！",
+  "item.minecraft.potion.effect.rc_strength": "§9力量药水"
 }

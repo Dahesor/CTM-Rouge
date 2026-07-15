@@ -1,0 +1,104 @@
+{
+    "anvil_cost": 999,
+    "description": "NULL",
+    "max_cost": {
+        "base": 9,
+        "per_level_above_first": 0
+    },
+    "min_cost": {
+        "base": 20,
+        "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "slots": [
+        "saddle"
+    ],
+    "supported_items": [
+        "structure_void"
+    ],
+    "weight": 1,
+    "effects": {
+        "damage_immunity": [
+            {
+                "effect": {},
+                "requirements": [
+                    {
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "damage_source_properties",
+                                "predicate": {
+                                    "tags": [
+                                        {
+                                            "expected": true,
+                                            "id": "is_player_attack"
+                                        },
+                                        {
+                                            "expected": false,
+                                            "id": "rcore:spear"
+                                        },
+                                        {
+                                            "expected": false,
+                                            "id": "bypasses_invulnerability"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "condition": "damage_source_properties",
+                                "predicate": {
+                                    "tags": [
+                                        {
+                                            "expected": true,
+                                            "id": "rcore:spear"
+                                        }
+                                    ],
+                                    "source_entity": {
+                                        "equipment": {
+                                            "offhand": {
+                                                "items": "#spears"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "inverted",
+                                        "term": {
+                                            "condition": "damage_source_properties",
+                                            "predicate": {
+                                                "source_entity": {
+                                                    "stepping_on": {
+                                                        "block": {
+                                                            "blocks": [
+                                                                "cyan_wool"
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "damage_source_properties",
+                                        "predicate": {
+                                            "tags": [
+                                                {
+                                                    "expected": false,
+                                                    "id": "bypasses_invulnerability"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

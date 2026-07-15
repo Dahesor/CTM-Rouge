@@ -20,5 +20,11 @@ execute if data storage team: cell{special:"purple_wool"} if score purple_wool.t
 execute if data storage team: cell{special:"purple_wool"} run return run data modify storage run: icon set value "w-"
 execute if data storage team: cell{special:"brown_wool"} if score brown_wool.taken data matches 1.. run return run data modify storage run: icon set value "k-"
 execute if data storage team: cell{special:"brown_wool"} run return run data modify storage run: icon set value "w-"
+execute if data storage team: cell{special:"cyan_wool"} if score cyan_wool.taken data matches 1.. run return run data modify storage run: icon set value "k-"
+execute if data storage team: cell{special:"cyan_wool"} run return run data modify storage run: icon set value "w-"
+execute if data storage team: cell{special:"red_wool"} if score red_wool.taken data matches 1.. run return run data modify storage run: icon set value "k-"
+execute if data storage team: cell{special:"red_wool"} run return run data modify storage run: icon set value "w-"
+execute if data storage team: cell{special:"blue_wool"} if score blue_wool.taken data matches 1.. run return run data modify storage run: icon set value "k-"
+execute if data storage team: cell{special:"blue_wool"} run return run data modify storage run: icon set value "w-"
 
 data modify storage run: icon set value "E-"
