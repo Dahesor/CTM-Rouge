@@ -12,3 +12,4 @@ execute if data storage run: {id:"purple_wool"} run function rcore:core/wool/sen
 execute if data storage run: {id:"brown_wool"} run function rcore:core/wool/send/brown
 execute if data storage run: {id:"cyan_wool"} run function rcore:core/wool/send/cyan
 execute if data storage run: {id:"red_wool"} run function rcore:core/wool/send/red
+execute if data storage run: {id:"blue_wool"} run function rcore:core/wool/send/blue

@@ -19,3 +19,4 @@ execute if data storage ram: map_cell{special:"purple_wool"} run return run data
 execute if data storage ram: map_cell{special:"brown_wool"} run return run data modify storage ram: struct_res.res set value "special:wool/brown"
 execute if data storage ram: map_cell{special:"cyan_wool"} run return run data modify storage ram: struct_res.res set value "special:wool/cyan"
 execute if data storage ram: map_cell{special:"red_wool"} run return run data modify storage ram: struct_res.res set value "special:wool/red"
+execute if data storage ram: map_cell{special:"blue_wool"} run return run data modify storage ram: struct_res.res set value "special:wool/blue"
