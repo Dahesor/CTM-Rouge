@@ -19,6 +19,7 @@ data modify storage team: spectate.map set from storage ram: emptyPlMap
 scoreboard players set #count calculator.cr 0
 function rcore:stream/start/spawn_point/pick_spawn
 
+scoreboard players operation @a game = $this game
 execute as @a unless score @s join_game matches 1.. run tp @s 60 70 60
 execute as @a unless score @s join_game matches 1.. run gamemode spectator @s
 tag @a remove has_wool

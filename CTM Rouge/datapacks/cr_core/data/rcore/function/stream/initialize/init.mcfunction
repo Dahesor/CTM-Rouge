@@ -30,6 +30,7 @@ scoreboard players reset @a tp.target
 scoreboard players operation @a soul.arrow_charge_time = soul_bind_arrow.cd const
 scoreboard players set #unique_room_id calculator.cr -1
 scoreboard players operation wool.orange.score data = wool.orange.score const
+scoreboard players add $this game 1
 
 function rcore:stream/initialize/bossbar/make
 

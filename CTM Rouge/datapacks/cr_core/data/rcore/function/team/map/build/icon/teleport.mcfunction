@@ -1,5 +1,6 @@
 scoreboard players set $save team 0
-execute as @e[type=marker,tag=cr.tp_room] run scoreboard players operation $save team = @s team
+scoreboard players operation $save room = @s room
+execute as @e[type=marker,tag=cr.tp_room,distance=..120] if score @s room = $save room run scoreboard players operation $save team = @s team
 execute if score $save team matches 1 run return run data modify storage run: icon set value "e-"
 execute if score $save team matches 2 run return run data modify storage run: icon set value "l-"
 execute if score $save team matches 3 run return run data modify storage run: icon set value "o-"

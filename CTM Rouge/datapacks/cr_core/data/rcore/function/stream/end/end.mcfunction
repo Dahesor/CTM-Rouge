@@ -22,6 +22,7 @@ execute store result storage ram: i.i int 1 run scoreboard players get seed data
 data modify storage ram: text[1].insertion set string storage ram: i.i
 data modify storage ram: text[1].click_event.value set string storage ram: i.i
 tellraw @a {storage:"ram:",nbt:"text",interpret:true}
+execute as @a run function rcore:player/utils/saddle_item
 
 bossbar remove rcore:boss/iron_golem
 bossbar remove rcore:boss/slime_king

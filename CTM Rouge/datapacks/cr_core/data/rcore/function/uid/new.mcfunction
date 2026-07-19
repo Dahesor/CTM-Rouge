@@ -11,3 +11,5 @@ kill @n[type=text_display,limit=1,distance=..5,tag=__name_getter]
 
 
 function rcore:player/utils/saddle_item
+
+function rcore:player/left_game
