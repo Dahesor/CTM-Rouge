@@ -1,1 +1,0 @@
-execute as @a at @s run function rcore:player/utils/misc/shield_disable

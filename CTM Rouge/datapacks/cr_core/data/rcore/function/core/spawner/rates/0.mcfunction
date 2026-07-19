@@ -1,5 +1,4 @@
 execute store result score #rand calculator.cr run random value 1..1000 gen:loot_rarity
-
 #common
 execute if score #rand calculator.cr matches 0..400 run return 1
 #rare

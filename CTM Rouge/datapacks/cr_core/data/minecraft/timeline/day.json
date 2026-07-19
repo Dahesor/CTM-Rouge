@@ -22,6 +22,14 @@
     "minecraft:wake_up_from_sleep": 0
   },
   "tracks": {
+    "gameplay/piglins_zombify":{
+      "keyframes": [
+        {
+          "ticks": 1,
+          "value": false
+        }
+      ]
+    },
     "minecraft:audio/firefly_bush_sounds": {
       "keyframes": [
         {

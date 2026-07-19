@@ -5,6 +5,7 @@ execute if block ~ ~ ~ spawner run return fail
 scoreboard players operation $this room = @s room
 scoreboard players operation @s floor = @s room
 scoreboard players operation @s floor /= floor.room_count options
+scoreboard players operation $this floor = @s floor
 scoreboard players set #player_count calculator.cr 0
 execute as @a[gamemode=!spectator,distance=..70,scores={join_game=1..}] if score @s room = $this room run scoreboard players add #player_count calculator.cr 1
 playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1.3

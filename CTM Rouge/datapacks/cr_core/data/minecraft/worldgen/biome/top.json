@@ -7,7 +7,8 @@
     "gameplay/monsters_burn": false,
     "visual/sun_angle": 180,
     "visual/moon_angle": 180,
-    "visual/cloud_height": 1999
+    "visual/cloud_height": 1999,
+    "gameplay/piglins_zombify": false
   },
   "carvers": [],
   "downfall": 0,

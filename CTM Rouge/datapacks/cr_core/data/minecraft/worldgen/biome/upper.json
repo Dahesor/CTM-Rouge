@@ -6,7 +6,8 @@
     "visual/star_brightness": 0,
     "gameplay/monsters_burn": false,
     "visual/sun_angle": 180,
-    "visual/moon_angle": 180
+    "visual/moon_angle": 180,
+    "gameplay/piglins_zombify": false
   },
   "carvers": [],
   "downfall": 0,
